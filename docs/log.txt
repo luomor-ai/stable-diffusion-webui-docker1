@@ -1747,3 +1747,76 @@ webui-docker-download-1  |
 webui-docker-download-1  | aria2 will resume download if the transfer is restarted.
 webui-docker-download-1  | If there are any errors, then see the log file. See '-l' option in help/man page for details.
 webui-docker-download-1 exited with code 1
+
+sudo docker compose --profile auto up --build
+[sudo] password for zhangchunsheng:
+[+] Building 539.0s (15/32)
+ => [auto internal] load .dockerignore                                                                                                                  0.2s
+ => => transferring context: 2B                                                                                                                         0.0s
+ => [auto internal] load build definition from Dockerfile                                                                                               0.3s
+ => => transferring dockerfile: 4.27kB                                                                                                                  0.0s
+ => [auto internal] load metadata for docker.io/library/python:3.10.9-slim                                                                            199.9s
+ => [auto internal] load metadata for docker.io/alpine/git:2.36.2                                                                                     187.3s
+ => [auto internal] load metadata for docker.io/library/alpine:3.17                                                                                   214.3s
+ => [auto internal] load build context                                                                                                                  0.1s
+ => => transferring context: 9.56kB                                                                                                                     0.0s
+ => [auto download 1/8] FROM docker.io/alpine/git:2.36.2@sha256:ec491c893597b68c92b88023827faa771772cfd5e106b76c713fa5e1c75dea84                      200.0s
+ => => resolve docker.io/alpine/git:2.36.2@sha256:ec491c893597b68c92b88023827faa771772cfd5e106b76c713fa5e1c75dea84                                     61.3s
+ => => sha256:ec491c893597b68c92b88023827faa771772cfd5e106b76c713fa5e1c75dea84 2.03kB / 2.03kB                                                          0.0s
+ => => sha256:a3e645585f160e0589529b8a3ca0fcfdba717ab93507de39ba5a96e207972927 946B / 946B                                                              0.0s
+ => => sha256:b80d2cac43e471c2bc5cfe547a45104e69e1b194f6f3f15ba1214f5e3020575e 1.85kB / 1.85kB                                                          0.0s
+ => => sha256:213ec9aee27d8be045c6a92b7eac22c9a64b44558193775a1a7f626352392b49 2.81MB / 2.81MB                                                        108.3s
+ => => sha256:b3b6ac3db031ea7b3607e700555c68707f072c457cb4e5511c12cf529656d437 18.49MB / 18.49MB                                                      116.0s
+ => => sha256:3fd92eeca8f54976c24de929011349e191dc349bf932629be5ac6fdf1d1c25df 99B / 99B                                                              137.8s
+ => => extracting sha256:213ec9aee27d8be045c6a92b7eac22c9a64b44558193775a1a7f626352392b49                                                               0.3s
+ => => extracting sha256:b3b6ac3db031ea7b3607e700555c68707f072c457cb4e5511c12cf529656d437                                                               0.8s
+ => => extracting sha256:3fd92eeca8f54976c24de929011349e191dc349bf932629be5ac6fdf1d1c25df                                                               0.0s
+ => [auto xformers 1/3] FROM docker.io/library/alpine:3.17@sha256:124c7d2707904eea7431fffe91522a01e5a861a624ee31d03372cc1d138a3126                    139.2s
+ => => resolve docker.io/library/alpine:3.17@sha256:124c7d2707904eea7431fffe91522a01e5a861a624ee31d03372cc1d138a3126                                   61.2s
+ => => sha256:b6ca290b6b4cdcca5b3db3ffa338ee0285c11744b4a6abaa9627746ee3291d8d 528B / 528B                                                              0.0s
+ => => sha256:9ed4aefc74f6792b5a804d1d146fe4b4a2299147b0f50eaf2b08435d7b38c27e 1.47kB / 1.47kB                                                          0.0s
+ => => sha256:124c7d2707904eea7431fffe91522a01e5a861a624ee31d03372cc1d138a3126 1.64kB / 1.64kB                                                          0.0s
+ => => sha256:f56be85fc22e46face30e2c3de3f7fe7c15f8fd7c4e5add29d7f64b87abdaa09 3.37MB / 3.37MB                                                         77.4s
+ => => extracting sha256:f56be85fc22e46face30e2c3de3f7fe7c15f8fd7c4e5add29d7f64b87abdaa09                                                               0.2s
+ => [auto stage-2  1/15] FROM docker.io/library/python:3.10.9-slim@sha256:76dd18d90a3d8710e091734bf2c9dd686d68747a51908db1e1f41e9a5ed4e2c5            115.4s
+ => => resolve docker.io/library/python:3.10.9-slim@sha256:76dd18d90a3d8710e091734bf2c9dd686d68747a51908db1e1f41e9a5ed4e2c5                            30.9s
+ => => sha256:5dda314a937ad03f8beac81c714da74e459b6174301368e0903ef586a68ae150 1.08MB / 1.08MB                                                         31.6s
+ => => sha256:76dd18d90a3d8710e091734bf2c9dd686d68747a51908db1e1f41e9a5ed4e2c5 1.86kB / 1.86kB                                                          0.0s
+ => => sha256:e15bb169d3a85f7e9c0f2d105ce628f13d71aed44b5d3d230b88f9653a9b19d5 1.37kB / 1.37kB                                                          0.0s
+ => => sha256:343cc23871cfcec31fcf0681d5107e22d4fa214fad76deec63868835ad06849e 7.79kB / 7.79kB                                                          0.0s
+ => => sha256:01b5b2efb836d74b8b49da819514eca52e25290d1688db59420ffb9c6b65a03c 31.40MB / 31.40MB                                                       37.4s
+ => => sha256:11d639c994a82f2fc3c071bc85b7fa8fb341d4186e1b1c535f8d4147b07f78cd 11.74MB / 11.74MB                                                       46.7s
+ => => sha256:d1465593fd9b15a8d99135d267721127f140c979a8831c320e1f326b830d2721 233B / 233B                                                             77.2s
+ => => extracting sha256:01b5b2efb836d74b8b49da819514eca52e25290d1688db59420ffb9c6b65a03c                                                               2.2s
+ => => sha256:4a6d0cbbdb413b71a251597fa3b79f3c0ec3ed7b7c1ee8ae3d4fe4fe053a04a4 3.35MB / 3.35MB                                                         83.5s
+ => => extracting sha256:5dda314a937ad03f8beac81c714da74e459b6174301368e0903ef586a68ae150                                                               0.1s
+ => => extracting sha256:11d639c994a82f2fc3c071bc85b7fa8fb341d4186e1b1c535f8d4147b07f78cd                                                               0.8s
+ => => extracting sha256:d1465593fd9b15a8d99135d267721127f140c979a8831c320e1f326b830d2721                                                               0.0s
+ => => extracting sha256:4a6d0cbbdb413b71a251597fa3b79f3c0ec3ed7b7c1ee8ae3d4fe4fe053a04a4                                                               0.4s
+ => [auto stage-2  2/15] RUN --mount=type=cache,target=/var/cache/apt   apt-get update &&   apt-get install -y fonts-dejavu-core rsync git jq moreut  198.1s
+ => [auto xformers 2/3] RUN apk add --no-cache aria2                                                                                                   16.9s
+ => CANCELED [auto xformers 3/3] RUN aria2c -x 5 --dir / --out wheel.whl 'https://github.com/AbdBarho/stable-diffusion-webui-docker/releases/downloa  167.4s
+ => [auto download 2/8] COPY clone.sh /clone.sh                                                                                                         0.9s
+ => ERROR [auto download 3/8] RUN . /clone.sh taming-transformers https://github.com/CompVis/taming-transformers.git 24268930bf1dce879235a7fddd0b235  121.6s
+ => CANCELED [auto stage-2  3/15] RUN --mount=type=cache,target=/cache --mount=type=cache,target=/root/.cache/pip   aria2c -x 5 --dir /cache --out tor  9.9s
+------
+ > [auto download 3/8] RUN . /clone.sh taming-transformers https://github.com/CompVis/taming-transformers.git 24268930bf1dce879235a7fddd0b2355b84d7ea6   && rm -rf data assets **/*.ipynb:
+#0 0.690 + mkdir -p /repositories/taming-transformers
+#0 0.691 + cd /repositories/taming-transformers
+#0 0.691 + git init
+#0 0.695 hint: Using 'master' as the name for the initial branch. This default branch name
+#0 0.695 hint: is subject to change. To configure the initial branch name to use in all
+#0 0.695 hint: of your new repositories, which will suppress this warning, call:
+#0 0.695 hint:
+#0 0.695 hint:  git config --global init.defaultBranch <name>
+#0 0.695 hint:
+#0 0.695 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+#0 0.695 hint: 'development'. The just-created branch can be renamed via this command:
+#0 0.695 hint:
+#0 0.695 hint:  git branch -m <name>
+#0 0.696 Initialized empty Git repository in /repositories/taming-transformers/.git/
+#0 0.696 + git remote add origin https://github.com/CompVis/taming-transformers.git
+#0 0.698 + git fetch origin 24268930bf1dce879235a7fddd0b2355b84d7ea6 '--depth=1'
+#0 120.9 fatal: unable to access 'https://github.com/CompVis/taming-transformers.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
+------
+failed to solve: process "/bin/sh -c . /clone.sh taming-transformers https://github.com/CompVis/taming-transformers.git 24268930bf1dce879235a7fddd0b2355b84d7ea6   && rm -rf data assets **/*.ipynb" did not complete successfully: exit code: 128
