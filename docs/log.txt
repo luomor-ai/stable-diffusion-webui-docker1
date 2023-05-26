@@ -1820,3 +1820,51 @@ sudo docker compose --profile auto up --build
 #0 120.9 fatal: unable to access 'https://github.com/CompVis/taming-transformers.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
 ------
 failed to solve: process "/bin/sh -c . /clone.sh taming-transformers https://github.com/CompVis/taming-transformers.git 24268930bf1dce879235a7fddd0b2355b84d7ea6   && rm -rf data assets **/*.ipynb" did not complete successfully: exit code: 128
+
+sudo docker compose --profile auto up --build
+[sudo] password for zhangchunsheng:
+[+] Building 404.4s (34/34) FINISHED
+ => [auto internal] load build definition from Dockerfile                                                                                               0.1s
+ => => transferring dockerfile: 4.55kB                                                                                                                  0.0s
+ => [auto internal] load .dockerignore                                                                                                                  0.1s
+ => => transferring context: 2B                                                                                                                         0.0s
+ => [auto internal] load metadata for docker.io/library/python:3.10.9-slim                                                                             47.5s
+ => [auto internal] load metadata for docker.io/alpine/git:2.36.2                                                                                      47.8s
+ => [auto internal] load metadata for docker.io/library/alpine:3.17                                                                                    47.7s
+ => [auto internal] load build context                                                                                                                  0.0s
+ => => transferring context: 4.66kB                                                                                                                     0.0s
+ => [auto download 1/8] FROM docker.io/alpine/git:2.36.2@sha256:ec491c893597b68c92b88023827faa771772cfd5e106b76c713fa5e1c75dea84                        0.0s
+ => [auto stage-2  1/16] FROM docker.io/library/python:3.10.9-slim@sha256:76dd18d90a3d8710e091734bf2c9dd686d68747a51908db1e1f41e9a5ed4e2c5              0.0s
+ => [auto xformers 1/3] FROM docker.io/library/alpine:3.17@sha256:124c7d2707904eea7431fffe91522a01e5a861a624ee31d03372cc1d138a3126                      0.0s
+ => CACHED [auto stage-2  2/16] RUN --mount=type=cache,target=/var/cache/apt   apt-get update &&   apt-get install -y fonts-dejavu-core rsync git jq m  0.0s
+ => CACHED [auto stage-2  3/16] RUN --mount=type=cache,target=/cache --mount=type=cache,target=/root/.cache/pip   aria2c -x 5 --dir /cache --out torch  0.0s
+ => CACHED [auto stage-2  4/16] RUN --mount=type=cache,target=/root/.cache/pip   git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git  0.0s
+ => CACHED [auto xformers 2/3] RUN apk add --no-cache aria2                                                                                             0.0s
+ => CACHED [auto xformers 3/3] RUN aria2c -x 5 --dir / --out wheel.whl 'https://github.com/AbdBarho/stable-diffusion-webui-docker/releases/download/5.  0.0s
+ => CACHED [auto stage-2  5/16] RUN --mount=type=cache,target=/root/.cache/pip    --mount=type=bind,from=xformers,source=/wheel.whl,target=/xformers-0  0.0s
+ => CACHED [auto download 2/8] COPY clone.sh /clone.sh                                                                                                  0.0s
+ => CACHED [auto download 3/8] RUN . /clone.sh taming-transformers https://github.com/CompVis/taming-transformers.git 24268930bf1dce879235a7fddd0b2355  0.0s
+ => CACHED [auto download 4/8] RUN . /clone.sh stable-diffusion-stability-ai https://github.com/Stability-AI/stablediffusion.git 47b6b607fdd31875c9279  0.0s
+ => CACHED [auto download 5/8] RUN . /clone.sh CodeFormer https://github.com/sczhou/CodeFormer.git c5b4593074ba6214284d6acd5f1719b6c5d739af   && rm -r  0.0s
+ => CACHED [auto download 6/8] RUN . /clone.sh BLIP https://github.com/salesforce/BLIP.git 48211a1594f1321b00f14c9f7a5b4813144b2fb9                     0.0s
+ => CACHED [auto download 7/8] RUN . /clone.sh k-diffusion https://github.com/crowsonkb/k-diffusion.git 5b3af030dd83e0297272d861c19477735d0317ec        0.0s
+ => CACHED [auto download 8/8] RUN . /clone.sh clip-interrogator https://github.com/pharmapsychotic/clip-interrogator 2486589f24165c8e3b303f84e9dbbea3  0.0s
+ => CACHED [auto stage-2  6/16] COPY --from=download /repositories/ /stable-diffusion-webui/repositories/                                               0.0s
+ => CACHED [auto stage-2  7/16] RUN mkdir /stable-diffusion-webui/interrogate && cp /stable-diffusion-webui/repositories/clip-interrogator/data/* /sta  0.0s
+ => CACHED [auto stage-2  8/16] RUN --mount=type=cache,target=/root/.cache/pip   pip install -r /stable-diffusion-webui/repositories/CodeFormer/requir  0.0s
+ => CACHED [auto stage-2  9/16] RUN --mount=type=cache,target=/root/.cache/pip   pip install pyngrok -i https://pypi.tuna.tsinghua.edu.cn/simple/       0.0s
+ => [auto stage-2 10/16] RUN --mount=type=cache,target=/root/.cache/pip   pip install   git+https://gitee.com/luomor/GFPGAN.git@8d2447a2d918f8eba5a4a  37.9s
+ => [auto stage-2 11/16] RUN apt-get -y install libgoogle-perftools-dev && apt-get clean                                                               13.2s
+ => [auto stage-2 12/16] RUN --mount=type=cache,target=/root/.cache/pip   cd stable-diffusion-webui &&   git fetch &&   git reset --hard 89f9faa63388  83.2s
+ => [auto stage-2 13/16] RUN --mount=type=cache,target=/root/.cache/pip  pip install -U opencv-python-headless -i https://pypi.tuna.tsinghua.edu.cn/s  86.0s
+ => [auto stage-2 14/16] COPY . /docker                                                                                                                 0.3s
+ => [auto stage-2 15/16] RUN   python3 /docker/info.py /stable-diffusion-webui/modules/ui.py &&   mv /stable-diffusion-webui/style.css /stable-diffusi  0.9s
+ => [auto stage-2 16/16] WORKDIR /stable-diffusion-webui                                                                                                0.9s
+ => [auto] exporting to image                                                                                                                         133.9s
+ => => exporting layers                                                                                                                               133.8s
+ => => writing image sha256:46c8b99fb47a6e5231febb492984adb06c56a44e9598abd3ea5aee7c5eda8630                                                            0.0s
+ => => naming to docker.io/library/sd-auto:57                                                                                                           0.0s
+[+] Running 1/1
+ ✔ Container webui-docker-auto-1  Created                                                                                                               0.5s
+Attaching to webui-docker-auto-1
+Error response from daemon: could not select device driver "nvidia" with capabilities: [[gpu]]
