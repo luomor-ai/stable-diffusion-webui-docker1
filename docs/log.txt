@@ -590,3 +590,1160 @@ webui-docker-download-1  |
 webui-docker-download-1  | aria2 will resume download if the transfer is restarted.
 webui-docker-download-1  | If there are any errors, then see the log file. See '-l' option in help/man page for details.
 webui-docker-download-1 exited with code 2
+
+
+sudo docker compose --profile download up --build
+[sudo] password for zhangchunsheng:
+[+] Building 63.8s (9/9) FINISHED
+ => [download internal] load .dockerignore                                                                                                              0.0s
+ => => transferring context: 2B                                                                                                                         0.0s
+ => [download internal] load build definition from Dockerfile                                                                                           0.0s
+ => => transferring dockerfile: 171B                                                                                                                    0.0s
+ => [download internal] load metadata for docker.io/library/bash:alpine3.15                                                                            63.5s
+ => [download 1/4] FROM docker.io/library/bash:alpine3.15@sha256:463b668dccc38f32a5bb5a5d59a3e1b787be432eb69b853fe4ad49cdce9a37d5                       0.0s
+ => [download internal] load build context                                                                                                              0.0s
+ => => transferring context: 128B                                                                                                                       0.0s
+ => CACHED [download 2/4] RUN apk add parallel aria2                                                                                                    0.0s
+ => CACHED [download 3/4] COPY . /docker                                                                                                                0.0s
+ => CACHED [download 4/4] RUN chmod +x /docker/download.sh                                                                                              0.0s
+ => [download] exporting to image                                                                                                                       0.1s
+ => => exporting layers                                                                                                                                 0.0s
+ => => writing image sha256:a5f7a2b64294a05857526ae96f93023f868ff2ac05b4cb7953021712efcac856                                                            0.0s
+ => => naming to docker.io/library/webui-docker-download                                                                                                0.0s
+[+] Running 1/0
+ ✔ Container webui-docker-download-1  Created                                                                                                           0.0s
+Attaching to webui-docker-download-1
+webui-docker-download-1  | Downloading, this might take a while...
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:01:25 [NOTICE] Downloading 8 item(s)
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:02:25 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#322a43 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/VAE/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#d4efab 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/GFPGAN/GFPGANv1.4.pth
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#63f3e9 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/RealESRGAN/RealESRGAN_x4plus.pth
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:26 [NOTICE] CUID#11 - Redirecting to https://objects.githubusercontent.com/github-production-release-asset-2e65be/387326890/08f0e941-ebb7-48f0-9d6a-73e87b710e7e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230526T090226Z&X-Amz-Expires=300&X-Amz-Signature=f1204baa7e442ddb2f5569210ed1f7f4d407a40d814e753ef163c0789b26045c&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=387326890&response-content-disposition=attachment%3B%20filename%3DRealESRGAN_x4plus.pth&response-content-type=application%2Foctet-stream
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:26 [NOTICE] CUID#10 - Redirecting to https://objects.githubusercontent.com/github-production-release-asset-2e65be/349321229/49ee8420-eb6e-4dfc-aad2-fa26d5cbcf28?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230526T090226Z&X-Amz-Expires=300&X-Amz-Signature=17f6456e11253cad623fc301ef52afe5a7bc4286485000ebdd16021eb9606216&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=349321229&response-content-disposition=attachment%3B%20filename%3DGFPGANv1.4.pth&response-content-type=application%2Foctet-stream
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#d4efab 0B/0B][#63f3e9 0B/0B]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:26 [NOTICE] GID#d4efab8871d19702 - Download has already completed: /data/GFPGAN/GFPGANv1.4.pth
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:26 [NOTICE] Download complete: /data/GFPGAN/GFPGANv1.4.pth
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:27 [NOTICE] CUID#17 - Redirecting to https://objects.githubusercontent.com/github-production-release-asset-2e65be/387326890/4f59d7c8-d03f-494e-8595-ae23af075393?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230526T090227Z&X-Amz-Expires=300&X-Amz-Signature=94ad2cb745c64f88650743055955e73b57f86b1a721606dc7909feab9dc37616&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=387326890&response-content-disposition=attachment%3B%20filename%3DRealESRGAN_x4plus_anime_6B.pth&response-content-type=application%2Foctet-stream
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 33MiB/63MiB(52%)][#ea1c82 3.7MiB/17MiB(22%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 34MiB/63MiB(53%)][#ea1c82 13MiB/17MiB(76%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:29 [NOTICE] Download complete: /data/RealESRGAN/RealESRGAN_x4plus_anime_6B.pth
+webui-docker-download-1  | [DL:7.4MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 35MiB/63MiB(54%)][#b7b934 0B/0B]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:30 [NOTICE] CUID#23 - Redirecting to https://heibox.uni-heidelberg.de/seafhttp/files/e86a8fdf-e0b8-42ea-83de-8a1ae61bba1c/2021-11-02T06-24-44-project.yaml
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:30 [NOTICE] GID#b7b9343a46aad02c - Download has already completed: /data/LDSR/project.yaml
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:30 [NOTICE] Download complete: /data/LDSR/project.yaml
+webui-docker-download-1  | [DL:5.2MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 35MiB/63MiB(56%)][#a35d0a 0B/0B]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:31 [NOTICE] CUID#24 - Redirecting to https://heibox.uni-heidelberg.de/seafhttp/files/bfb72fa5-f66d-4236-8759-9b4717e4d388/last.ckpt
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:31 [NOTICE] GID#a35d0aa5e9625919 - Download has already completed: /data/LDSR/model.ckpt
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:31 [NOTICE] Download complete: /data/LDSR/model.ckpt
+webui-docker-download-1  | [DL:4.2MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 37MiB/63MiB(57%)]
+webui-docker-download-1  | [DL:3.5MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 38MiB/63MiB(59%)]
+webui-docker-download-1  | [DL:3.2MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 39MiB/63MiB(61%)]
+webui-docker-download-1  | [DL:2.9MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 40MiB/63MiB(64%)]
+webui-docker-download-1  | [DL:2.7MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 42MiB/63MiB(66%)]
+webui-docker-download-1  | [DL:2.6MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 44MiB/63MiB(69%)]
+webui-docker-download-1  | [DL:2.6MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 46MiB/63MiB(73%)]
+webui-docker-download-1  | [DL:2.0MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 50MiB/63MiB(78%)]
+webui-docker-download-1  | [DL:2.0MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 55MiB/63MiB(86%)]
+webui-docker-download-1  | [DL:2.5MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B][#63f3e9 61MiB/63MiB(96%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:02:41 [NOTICE] Download complete: /data/RealESRGAN/RealESRGAN_x4plus.pth
+webui-docker-download-1  | [DL:2.7MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:2.5MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:2.4MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:2.2MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:2.0MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:1.7MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:1.3MiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:858KiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:132KiB][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:03:26 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#322a43 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/VAE/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:04:26 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#322a43 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/VAE/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:05:26 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#322a43 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/VAE/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 0B/0B CN:1 DL:0B]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:0B][#216a7a 0B/0B][#322a43 0B/0B][#f4c3f6 0B/0B]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:27 [NOTICE] CUID#9 - Redirecting to https://cdn-lfs.huggingface.co/repos/28/5e/285eb65c80a79a0d555ab9f79ed524aac4548cceb7a5e49c9084f0633c51009a/c6bbc15e3224e6973459ba78de4998b80b50112b0ae5b5c67113d56b4e366b19?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27sd-v1-5-inpainting.ckpt%3B+filename%3D%22sd-v1-5-inpainting.ckpt%22%3B&Expires=1685350264&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzI4LzVlLzI4NWViNjVjODBhNzlhMGQ1NTVhYjlmNzllZDUyNGFhYzQ1NDhjY2ViN2E1ZTQ5YzkwODRmMDYzM2M1MTAwOWEvYzZiYmMxNWUzMjI0ZTY5NzM0NTliYTc4ZGU0OTk4YjgwYjUwMTEyYjBhZTViNWM2NzExM2Q1NmI0ZTM2NmIxOT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNTAyNjR9fX1dfQ__&Signature=cZ6dLZGr03Jd12tjG3yZaqs2v-WSA07AqKCWU6it0Fb-pw59nbikgk-KMClPOAk8G9Vf5DRCfptFuIaRSLIFdb1O5L-msky-AC6u62vcjujgeDR%7Epgv4p4p4xASPVIynZddLmiaY105LTdwnLiOqk-1YLut1MKGmxvDEAPtXdw8vnxxJdoidPTMuqCjETXeDBjrUGBkQPzV%7Etim4N6s69EhlxWa58DPdsljBG8iz4Y7xKRJls0gyGQQ7znmK%7EHAeE3%7EHyKlTXXZ9UdYVHUgJBd5RizIdR6QPaw9Z5BpQvELJbE45Pe9X9op5kDvxblbsCtlDlo4AnRdbCOOUnljIZA__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:27 [NOTICE] CUID#8 - Redirecting to https://cdn-lfs.huggingface.co/repos/ec/ee/eceee26c5834d8a75cf04eeb17dfc06d1d5fe1d80c2f19520b148c11e2e98c45/c6a580b13a5bc05a5e16e4dbb80608ff2ec251a162311590c1f34c013d7f3dab?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27vae-ft-mse-840000-ema-pruned.ckpt%3B+filename%3D%22vae-ft-mse-840000-ema-pruned.ckpt%22%3B&Expires=1685349584&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2VjL2VlL2VjZWVlMjZjNTgzNGQ4YTc1Y2YwNGVlYjE3ZGZjMDZkMWQ1ZmUxZDgwYzJmMTk1MjBiMTQ4YzExZTJlOThjNDUvYzZhNTgwYjEzYTViYzA1YTVlMTZlNGRiYjgwNjA4ZmYyZWMyNTFhMTYyMzExNTkwYzFmMzRjMDEzZDdmM2RhYj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk1ODR9fX1dfQ__&Signature=Tk34FmnkU%7ErWJYGM3i308iNwvgyx6bhYatxqc21CENHAmsv5GyQiyBccHwgE2o%7Ex5sjSOhbMRGg%7EKsuP%7Ek27XK1NKjmN2Auzot7VUTCc9obZcwaK2FRJTngSYVOXPEztpJ-FUGbTgvwlQE77HaBKnR6PUbZa6MnBBLdb-4MF7ZP3V7KpLkfr%7ED9FtNHtNXJow7frHRT4NRTfN7f5fBYFEy7ZPCW4SbQmykCSP3hiGuYreGm0abcljZyu17z075Tijhw35J-lrF6suIhcTINcAOzu%7EcdL694g8xD6vIgCLbkjaGsjNZNUajmvWH9QpRX%7EAmYH7xKLUVsY1PggkMsoAA__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:27 [NOTICE] CUID#7 - Redirecting to https://cdn-lfs.huggingface.co/repos/6b/20/6b201da5f0f5c60524535ebb7deac2eef68605655d3bbacfee9cce0087f3b3f5/cc6cb27103417325ff94f52b7a5d2dde45a7515b25c255d8e396c90014281516?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27v1-5-pruned-emaonly.ckpt%3B+filename%3D%22v1-5-pruned-emaonly.ckpt%22%3B&Expires=1685349687&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzZiLzIwLzZiMjAxZGE1ZjBmNWM2MDUyNDUzNWViYjdkZWFjMmVlZjY4NjA1NjU1ZDNiYmFjZmVlOWNjZTAwODdmM2IzZjUvY2M2Y2IyNzEwMzQxNzMyNWZmOTRmNTJiN2E1ZDJkZGU0NWE3NTE1YjI1YzI1NWQ4ZTM5NmM5MDAxNDI4MTUxNj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk2ODd9fX1dfQ__&Signature=sSRhBm6qNJMKTsmBddQnmENC3dXcUXeh3i5Y1p4JjIhO5slpARAcKaO7fbmK1-%7EFOTk9eMc3jP-vkjZ8LCvxi5IAw7qs7rUeGPAX8MkgOBpHOAi2xmlhvo5LaksvkuOaWrEHd1CkwuCLhwxt5CgIT2pGBfo8TqH%7EYI73piUokjOAO1z6YXtDZHmtGImt-a6EBCaT0a%7E2fuQxlTmYafhA06dNa8VT55trXzjFtxFqqKs8m-rU%7EdaeqBKmlAS-I6MqLW5zJwT%7EtUoA-luNibI4jQpSQiicAbjZTyOoNh0m-EZqQhGPHCB4IvNNp1yy%7EzLK7SR1htH5lTU7aHBbr-dRHw__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:27 [ERROR] CUID#34 - Download aborted. URI=https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  | [DL:1.0MiB][#216a7a 0B/0B][#322a43 256KiB/319MiB(0%)][#f4c3f6 240KiB/3.9GiB(0%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:27 [NOTICE] CUID#27 - Redirecting to https://cdn-lfs.huggingface.co/repos/ec/ee/eceee26c5834d8a75cf04eeb17dfc06d1d5fe1d80c2f19520b148c11e2e98c45/c6a580b13a5bc05a5e16e4dbb80608ff2ec251a162311590c1f34c013d7f3dab?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27vae-ft-mse-840000-ema-pruned.ckpt%3B+filename%3D%22vae-ft-mse-840000-ema-pruned.ckpt%22%3B&Expires=1685349525&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2VjL2VlL2VjZWVlMjZjNTgzNGQ4YTc1Y2YwNGVlYjE3ZGZjMDZkMWQ1ZmUxZDgwYzJmMTk1MjBiMTQ4YzExZTJlOThjNDUvYzZhNTgwYjEzYTViYzA1YTVlMTZlNGRiYjgwNjA4ZmYyZWMyNTFhMTYyMzExNTkwYzFmMzRjMDEzZDdmM2RhYj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk1MjV9fX1dfQ__&Signature=l%7Exj3dnmHKo14FJVQtQjhq6UJ-VmZxTRm6Fl1SeAjJyB3LFhGcqjU0-4Lri%7E4Bi5h--WykuxZ%7EOSH8yN6i-SejSQPqnfrlL1f2lguyc6QhMrZJ2kG99NdFsTmAyEmYQAHxGncS9erCdmFuK%7EckFth47LuSVwUNNUdAmHUGZNsHM29RGDoQFP%7EbilKFMHLQiQANd%7EQ6dcGUEyzT%7E4EloahR60rrHtol1AsFObzELwINPmvBkmyczOcK50CJOhkz6p6OAI0tlV7tjZe-LwZX1UizM8O2wH1eqND7acRJO8cH7%7EFFyiQiUAy8J4KbgdujgYQwH15AeVHwEtHS1pozx8jQ__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [NOTICE] CUID#29 - Redirecting to https://cdn-lfs.huggingface.co/repos/ec/ee/eceee26c5834d8a75cf04eeb17dfc06d1d5fe1d80c2f19520b148c11e2e98c45/c6a580b13a5bc05a5e16e4dbb80608ff2ec251a162311590c1f34c013d7f3dab?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27vae-ft-mse-840000-ema-pruned.ckpt%3B+filename%3D%22vae-ft-mse-840000-ema-pruned.ckpt%22%3B&Expires=1685349481&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2VjL2VlL2VjZWVlMjZjNTgzNGQ4YTc1Y2YwNGVlYjE3ZGZjMDZkMWQ1ZmUxZDgwYzJmMTk1MjBiMTQ4YzExZTJlOThjNDUvYzZhNTgwYjEzYTViYzA1YTVlMTZlNGRiYjgwNjA4ZmYyZWMyNTFhMTYyMzExNTkwYzFmMzRjMDEzZDdmM2RhYj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk0ODF9fX1dfQ__&Signature=PtpExRS9dTwlHV%7EGnbqaQ9GD1KzEzHF0E6vvfLDviCWlNxcAHanAiIp76a-3EFXBcSj4yKveIURtst1QkNaiQdNnwAocybjMNyOaIJoNVj9OzaiJJ7OGqIXqcG2mcmmhUVSQygOBlugeWd4vv0Qf6jIX7gSOO3Gcmq3UX9YVwH%7Ea8IrBtpgQ551X38peZrtMXEXoQbpEDNJDalaYn8lA4UOskh4esle4FJq8WyJPC0rwvhWHp9h6QuEhLTXQx7XE31iJub1YoTDolUZKDn3peUyNlbREjDmAWCKnS9N5ZSPcdxLcYEKgkiel8UZPWtevlxiwnBAdJ738vBHDn301rQ__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [NOTICE] CUID#28 - Redirecting to https://cdn-lfs.huggingface.co/repos/ec/ee/eceee26c5834d8a75cf04eeb17dfc06d1d5fe1d80c2f19520b148c11e2e98c45/c6a580b13a5bc05a5e16e4dbb80608ff2ec251a162311590c1f34c013d7f3dab?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27vae-ft-mse-840000-ema-pruned.ckpt%3B+filename%3D%22vae-ft-mse-840000-ema-pruned.ckpt%22%3B&Expires=1685349705&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2VjL2VlL2VjZWVlMjZjNTgzNGQ4YTc1Y2YwNGVlYjE3ZGZjMDZkMWQ1ZmUxZDgwYzJmMTk1MjBiMTQ4YzExZTJlOThjNDUvYzZhNTgwYjEzYTViYzA1YTVlMTZlNGRiYjgwNjA4ZmYyZWMyNTFhMTYyMzExNTkwYzFmMzRjMDEzZDdmM2RhYj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk3MDV9fX1dfQ__&Signature=LuTH%7ERuYYgXZFBUo7XDv%7E1cedE%7EyH9ui7MGl1pR4kzOGqHM1Ze9wjua3eVsH6t6PffUTjwtcaFnAG0cR2mfLDwX-CdxMPBIbc2Y6KlcKQqGrTjUcQ885HwU1Rtg8pFit0Yz9n9%7E80Dg7ynybaOoIsNIRqqgxpU3Y5ZHcLdt2BgV4aMkMPqbC40i1KNuv6UkBGNNaLGqvjzjjH6Pz5KlJo-5wTgrpV2ZPLpAM97QOU-5FqU0RKl2vCNLYwiLjlxiWAYKXtETHVg8fYfV6%7EeKMlXM9I21W%7EnfXMFQ1a4x3NWSbH7um-%7ENfSR3Kh3q%7E8gnXFbXSpxhymyJQsviHaITsvA__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [NOTICE] CUID#32 - Redirecting to https://cdn-lfs.huggingface.co/repos/28/5e/285eb65c80a79a0d555ab9f79ed524aac4548cceb7a5e49c9084f0633c51009a/c6bbc15e3224e6973459ba78de4998b80b50112b0ae5b5c67113d56b4e366b19?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27sd-v1-5-inpainting.ckpt%3B+filename%3D%22sd-v1-5-inpainting.ckpt%22%3B&Expires=1685350547&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzI4LzVlLzI4NWViNjVjODBhNzlhMGQ1NTVhYjlmNzllZDUyNGFhYzQ1NDhjY2ViN2E1ZTQ5YzkwODRmMDYzM2M1MTAwOWEvYzZiYmMxNWUzMjI0ZTY5NzM0NTliYTc4ZGU0OTk4YjgwYjUwMTEyYjBhZTViNWM2NzExM2Q1NmI0ZTM2NmIxOT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNTA1NDd9fX1dfQ__&Signature=EgZhRpzINZXd-gkc-mLYVy7OzT7OcY30TvI%7En-fYDVzwczgHX1tvdwNuF4TcSu5Zqm57w4HcEDp8mD-5nFV7W4KyGb5SMwEzFHjG2KFI%7EkCBNerMtPWQ-4uyJF5kYg59jiFE5Ov-FZGoTEe1tgqSwm0dvqc6BVxovk0Y2Ja1ATvRCysFcYwnmR4Utm1ggjWlZJ3hFyRhmawwgNfMu105aca2cXog9lQ7NtuOLEL0o51SbClGrGSZ0TudpPz%7Ei7gKZRlkFK-rGxxZr0PrtLZ8ZAQRWGdIUdh4vtKSl0cqzye%7E-desuR0uJjNhSllmFfOIrvSpfnU1XnrH%7EI1-IvmiQQ__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [NOTICE] CUID#31 - Redirecting to https://cdn-lfs.huggingface.co/repos/28/5e/285eb65c80a79a0d555ab9f79ed524aac4548cceb7a5e49c9084f0633c51009a/c6bbc15e3224e6973459ba78de4998b80b50112b0ae5b5c67113d56b4e366b19?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27sd-v1-5-inpainting.ckpt%3B+filename%3D%22sd-v1-5-inpainting.ckpt%22%3B&Expires=1685351017&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzI4LzVlLzI4NWViNjVjODBhNzlhMGQ1NTVhYjlmNzllZDUyNGFhYzQ1NDhjY2ViN2E1ZTQ5YzkwODRmMDYzM2M1MTAwOWEvYzZiYmMxNWUzMjI0ZTY5NzM0NTliYTc4ZGU0OTk4YjgwYjUwMTEyYjBhZTViNWM2NzExM2Q1NmI0ZTM2NmIxOT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNTEwMTd9fX1dfQ__&Signature=AY27bFVPrqfKnk1lIJ8Q0f-bSqrhL-d49LEg-sbmuGRKtEQFlifDLgZZoC0%7Ey4oP3Q8htIES2Vnyvoi9SqFQReXfO%7EAwr4ZKzFIK05hCJgIHlXSW%7E3vCTHoQBS9wiyW9vT0lWkSUTHR8OpE4KBqTh202NN1usZD3zm9RlVUFmyJxkpk%7E-pY8J5c9oFKqrIWz1u3%7E9ZAoEFNpKtdVWYfI2EPjsT94bQ49R8VijiDpb1Edsib-oqbbYlKteKWdGXcYUpcg3o-wfiyRE7x7kSX2ylaoKJ10dN511Fd9TfNj2K4MixbF3E6YE2ftjrbIh9crHIjtyJn2tslSfict7fwuYQ__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [NOTICE] CUID#33 - Redirecting to https://cdn-lfs.huggingface.co/repos/28/5e/285eb65c80a79a0d555ab9f79ed524aac4548cceb7a5e49c9084f0633c51009a/c6bbc15e3224e6973459ba78de4998b80b50112b0ae5b5c67113d56b4e366b19?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27sd-v1-5-inpainting.ckpt%3B+filename%3D%22sd-v1-5-inpainting.ckpt%22%3B&Expires=1685350583&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzI4LzVlLzI4NWViNjVjODBhNzlhMGQ1NTVhYjlmNzllZDUyNGFhYzQ1NDhjY2ViN2E1ZTQ5YzkwODRmMDYzM2M1MTAwOWEvYzZiYmMxNWUzMjI0ZTY5NzM0NTliYTc4ZGU0OTk4YjgwYjUwMTEyYjBhZTViNWM2NzExM2Q1NmI0ZTM2NmIxOT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNTA1ODN9fX1dfQ__&Signature=cVIYzRlqiTv6NLsOVQFq-9CFyJ9cM5Qv-gDRDpdK6Jm0xrZOUbdZfsRQWgqq-tbLQXhW0bbiqb3CvFMu3M%7EM69JPw%7Ec-pHEgnj4S01t2ebT4rrKQyZNtURHJt%7Eo5wNCbay5pbPBaCBMh9ecL3ulAAMW6SUT6NV0VwCvxclPTUm6PgaVC1dUn5a%7EUwCZ7Nt15y0GJ2AUnBtfjscwGpT5vAo0VCOYgp0sX%7EUiSerUAkMvUgpUN2Qg%7E3OZfLCZztxJ4U72tvuMXwnXKxdPTXsPDpAj%7EpM1BTLZeetA10da3RHnuxg%7EGcLIXKmxxo2Y3a2bv1yFqFrP8XneW4Xdyj2%7E4xw__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [NOTICE] CUID#41 - Redirecting to https://cdn-lfs.huggingface.co/repos/6b/20/6b201da5f0f5c60524535ebb7deac2eef68605655d3bbacfee9cce0087f3b3f5/cc6cb27103417325ff94f52b7a5d2dde45a7515b25c255d8e396c90014281516?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27v1-5-pruned-emaonly.ckpt%3B+filename%3D%22v1-5-pruned-emaonly.ckpt%22%3B&Expires=1685350393&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzZiLzIwLzZiMjAxZGE1ZjBmNWM2MDUyNDUzNWViYjdkZWFjMmVlZjY4NjA1NjU1ZDNiYmFjZmVlOWNjZTAwODdmM2IzZjUvY2M2Y2IyNzEwMzQxNzMyNWZmOTRmNTJiN2E1ZDJkZGU0NWE3NTE1YjI1YzI1NWQ4ZTM5NmM5MDAxNDI4MTUxNj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNTAzOTN9fX1dfQ__&Signature=epSZ9in7xVwPJWmiXskLIhv8H7IekGleddqQebK%7EO-CTYgDoXU%7E4wuWV-glxezCeU3Oql9Bq68FNIUY0u7YV0bA3xPiqGaN%7EVPEKVb0mVe2Ngnk3KPK1xmjz3vIeLde2aUhbkBmtOa0JimBY0QPFlBTPsFr3-stEyp5%7EXVQQyOpXYXLone-H1zeaVznhXCj5UxHoir%7EMUDBZDNx%7EbSTtHcghcNu50I2rqdPvMcXE5yyfjA4KE3wAoNYVvMTbjSDyQrfIKZ%7E7MKtrHKR3-k%7E6BRWQRT%7EiQNhtLAwJf6cZVbIkQc12jFY91tzREV1YDgA3Aalvui8RHPphHUvgtzLkGA__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [NOTICE] CUID#26 - Redirecting to https://cdn-lfs.huggingface.co/repos/ec/ee/eceee26c5834d8a75cf04eeb17dfc06d1d5fe1d80c2f19520b148c11e2e98c45/c6a580b13a5bc05a5e16e4dbb80608ff2ec251a162311590c1f34c013d7f3dab?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27vae-ft-mse-840000-ema-pruned.ckpt%3B+filename%3D%22vae-ft-mse-840000-ema-pruned.ckpt%22%3B&Expires=1685349525&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2VjL2VlL2VjZWVlMjZjNTgzNGQ4YTc1Y2YwNGVlYjE3ZGZjMDZkMWQ1ZmUxZDgwYzJmMTk1MjBiMTQ4YzExZTJlOThjNDUvYzZhNTgwYjEzYTViYzA1YTVlMTZlNGRiYjgwNjA4ZmYyZWMyNTFhMTYyMzExNTkwYzFmMzRjMDEzZDdmM2RhYj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk1MjV9fX1dfQ__&Signature=l%7Exj3dnmHKo14FJVQtQjhq6UJ-VmZxTRm6Fl1SeAjJyB3LFhGcqjU0-4Lri%7E4Bi5h--WykuxZ%7EOSH8yN6i-SejSQPqnfrlL1f2lguyc6QhMrZJ2kG99NdFsTmAyEmYQAHxGncS9erCdmFuK%7EckFth47LuSVwUNNUdAmHUGZNsHM29RGDoQFP%7EbilKFMHLQiQANd%7EQ6dcGUEyzT%7E4EloahR60rrHtol1AsFObzELwINPmvBkmyczOcK50CJOhkz6p6OAI0tlV7tjZe-LwZX1UizM8O2wH1eqND7acRJO8cH7%7EFFyiQiUAy8J4KbgdujgYQwH15AeVHwEtHS1pozx8jQ__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [NOTICE] CUID#39 - Redirecting to https://cdn-lfs.huggingface.co/repos/6b/20/6b201da5f0f5c60524535ebb7deac2eef68605655d3bbacfee9cce0087f3b3f5/cc6cb27103417325ff94f52b7a5d2dde45a7515b25c255d8e396c90014281516?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27v1-5-pruned-emaonly.ckpt%3B+filename%3D%22v1-5-pruned-emaonly.ckpt%22%3B&Expires=1685349687&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzZiLzIwLzZiMjAxZGE1ZjBmNWM2MDUyNDUzNWViYjdkZWFjMmVlZjY4NjA1NjU1ZDNiYmFjZmVlOWNjZTAwODdmM2IzZjUvY2M2Y2IyNzEwMzQxNzMyNWZmOTRmNTJiN2E1ZDJkZGU0NWE3NTE1YjI1YzI1NWQ4ZTM5NmM5MDAxNDI4MTUxNj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk2ODd9fX1dfQ__&Signature=sSRhBm6qNJMKTsmBddQnmENC3dXcUXeh3i5Y1p4JjIhO5slpARAcKaO7fbmK1-%7EFOTk9eMc3jP-vkjZ8LCvxi5IAw7qs7rUeGPAX8MkgOBpHOAi2xmlhvo5LaksvkuOaWrEHd1CkwuCLhwxt5CgIT2pGBfo8TqH%7EYI73piUokjOAO1z6YXtDZHmtGImt-a6EBCaT0a%7E2fuQxlTmYafhA06dNa8VT55trXzjFtxFqqKs8m-rU%7EdaeqBKmlAS-I6MqLW5zJwT%7EtUoA-luNibI4jQpSQiicAbjZTyOoNh0m-EZqQhGPHCB4IvNNp1yy%7EzLK7SR1htH5lTU7aHBbr-dRHw__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [ERROR] CUID#41 - Download aborted. URI=https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://cdn-lfs.huggingface.co/repos/6b/20/6b201da5f0f5c60524535ebb7deac2eef68605655d3bbacfee9cce0087f3b3f5/cc6cb27103417325ff94f52b7a5d2dde45a7515b25c255d8e396c90014281516?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27v1-5-pruned-emaonly.ckpt%3B+filename%3D%22v1-5-pruned-emaonly.ckpt%22%3B&Expires=1685350393&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzZiLzIwLzZiMjAxZGE1ZjBmNWM2MDUyNDUzNWViYjdkZWFjMmVlZjY4NjA1NjU1ZDNiYmFjZmVlOWNjZTAwODdmM2IzZjUvY2M2Y2IyNzEwMzQxNzMyNWZmOTRmNTJiN2E1ZDJkZGU0NWE3NTE1YjI1YzI1NWQ4ZTM5NmM5MDAxNDI4MTUxNj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNTAzOTN9fX1dfQ__&Signature=epSZ9in7xVwPJWmiXskLIhv8H7IekGleddqQebK%7EO-CTYgDoXU%7E4wuWV-glxezCeU3Oql9Bq68FNIUY0u7YV0bA3xPiqGaN%7EVPEKVb0mVe2Ngnk3KPK1xmjz3vIeLde2aUhbkBmtOa0JimBY0QPFlBTPsFr3-stEyp5%7EXVQQyOpXYXLone-H1zeaVznhXCj5UxHoir%7EMUDBZDNx%7EbSTtHcghcNu50I2rqdPvMcXE5yyfjA4KE3wAoNYVvMTbjSDyQrfIKZ%7E7MKtrHKR3-k%7E6BRWQRT%7EiQNhtLAwJf6cZVbIkQc12jFY91tzREV1YDgA3Aalvui8RHPphHUvgtzLkGA__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:28 [ERROR] CUID#26 - Download aborted. URI=https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://cdn-lfs.huggingface.co/repos/ec/ee/eceee26c5834d8a75cf04eeb17dfc06d1d5fe1d80c2f19520b148c11e2e98c45/c6a580b13a5bc05a5e16e4dbb80608ff2ec251a162311590c1f34c013d7f3dab?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27vae-ft-mse-840000-ema-pruned.ckpt%3B+filename%3D%22vae-ft-mse-840000-ema-pruned.ckpt%22%3B&Expires=1685349525&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2VjL2VlL2VjZWVlMjZjNTgzNGQ4YTc1Y2YwNGVlYjE3ZGZjMDZkMWQ1ZmUxZDgwYzJmMTk1MjBiMTQ4YzExZTJlOThjNDUvYzZhNTgwYjEzYTViYzA1YTVlMTZlNGRiYjgwNjA4ZmYyZWMyNTFhMTYyMzExNTkwYzFmMzRjMDEzZDdmM2RhYj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk1MjV9fX1dfQ__&Signature=l%7Exj3dnmHKo14FJVQtQjhq6UJ-VmZxTRm6Fl1SeAjJyB3LFhGcqjU0-4Lri%7E4Bi5h--WykuxZ%7EOSH8yN6i-SejSQPqnfrlL1f2lguyc6QhMrZJ2kG99NdFsTmAyEmYQAHxGncS9erCdmFuK%7EckFth47LuSVwUNNUdAmHUGZNsHM29RGDoQFP%7EbilKFMHLQiQANd%7EQ6dcGUEyzT%7E4EloahR60rrHtol1AsFObzELwINPmvBkmyczOcK50CJOhkz6p6OAI0tlV7tjZe-LwZX1UizM8O2wH1eqND7acRJO8cH7%7EFFyiQiUAy8J4KbgdujgYQwH15AeVHwEtHS1pozx8jQ__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  | [DL:6.6MiB][#216a7a 1.5MiB/3.9GiB(0%)][#322a43 3.3MiB/319MiB(1%)][#f4c3f6 4.7MiB/3.9GiB(0%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:29 [ERROR] CUID#39 - Download aborted. URI=https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://cdn-lfs.huggingface.co/repos/6b/20/6b201da5f0f5c60524535ebb7deac2eef68605655d3bbacfee9cce0087f3b3f5/cc6cb27103417325ff94f52b7a5d2dde45a7515b25c255d8e396c90014281516?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27v1-5-pruned-emaonly.ckpt%3B+filename%3D%22v1-5-pruned-emaonly.ckpt%22%3B&Expires=1685349687&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzZiLzIwLzZiMjAxZGE1ZjBmNWM2MDUyNDUzNWViYjdkZWFjMmVlZjY4NjA1NjU1ZDNiYmFjZmVlOWNjZTAwODdmM2IzZjUvY2M2Y2IyNzEwMzQxNzMyNWZmOTRmNTJiN2E1ZDJkZGU0NWE3NTE1YjI1YzI1NWQ4ZTM5NmM5MDAxNDI4MTUxNj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk2ODd9fX1dfQ__&Signature=sSRhBm6qNJMKTsmBddQnmENC3dXcUXeh3i5Y1p4JjIhO5slpARAcKaO7fbmK1-%7EFOTk9eMc3jP-vkjZ8LCvxi5IAw7qs7rUeGPAX8MkgOBpHOAi2xmlhvo5LaksvkuOaWrEHd1CkwuCLhwxt5CgIT2pGBfo8TqH%7EYI73piUokjOAO1z6YXtDZHmtGImt-a6EBCaT0a%7E2fuQxlTmYafhA06dNa8VT55trXzjFtxFqqKs8m-rU%7EdaeqBKmlAS-I6MqLW5zJwT%7EtUoA-luNibI4jQpSQiicAbjZTyOoNh0m-EZqQhGPHCB4IvNNp1yy%7EzLK7SR1htH5lTU7aHBbr-dRHw__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  | [DL:8.8MiB][#216a7a 4.0MiB/3.9GiB(0%)][#322a43 7.2MiB/319MiB(2%)][#f4c3f6 10MiB/3.9GiB(0%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:30 [ERROR] CUID#27 - Download aborted. URI=https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://cdn-lfs.huggingface.co/repos/ec/ee/eceee26c5834d8a75cf04eeb17dfc06d1d5fe1d80c2f19520b148c11e2e98c45/c6a580b13a5bc05a5e16e4dbb80608ff2ec251a162311590c1f34c013d7f3dab?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27vae-ft-mse-840000-ema-pruned.ckpt%3B+filename%3D%22vae-ft-mse-840000-ema-pruned.ckpt%22%3B&Expires=1685349525&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2VjL2VlL2VjZWVlMjZjNTgzNGQ4YTc1Y2YwNGVlYjE3ZGZjMDZkMWQ1ZmUxZDgwYzJmMTk1MjBiMTQ4YzExZTJlOThjNDUvYzZhNTgwYjEzYTViYzA1YTVlMTZlNGRiYjgwNjA4ZmYyZWMyNTFhMTYyMzExNTkwYzFmMzRjMDEzZDdmM2RhYj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNDk1MjV9fX1dfQ__&Signature=l%7Exj3dnmHKo14FJVQtQjhq6UJ-VmZxTRm6Fl1SeAjJyB3LFhGcqjU0-4Lri%7E4Bi5h--WykuxZ%7EOSH8yN6i-SejSQPqnfrlL1f2lguyc6QhMrZJ2kG99NdFsTmAyEmYQAHxGncS9erCdmFuK%7EckFth47LuSVwUNNUdAmHUGZNsHM29RGDoQFP%7EbilKFMHLQiQANd%7EQ6dcGUEyzT%7E4EloahR60rrHtol1AsFObzELwINPmvBkmyczOcK50CJOhkz6p6OAI0tlV7tjZe-LwZX1UizM8O2wH1eqND7acRJO8cH7%7EFFyiQiUAy8J4KbgdujgYQwH15AeVHwEtHS1pozx8jQ__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  | [DL:9.4MiB][#216a7a 6.5MiB/3.9GiB(0%)][#322a43 10MiB/319MiB(3%)][#f4c3f6 15MiB/3.9GiB(0%)]
+webui-docker-download-1  | [DL:9.8MiB][#216a7a 9.2MiB/3.9GiB(0%)][#322a43 14MiB/319MiB(4%)][#f4c3f6 19MiB/3.9GiB(0%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 12MiB/3.9GiB(0%)][#322a43 17MiB/319MiB(5%)][#f4c3f6 24MiB/3.9GiB(0%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 14MiB/3.9GiB(0%)][#322a43 21MiB/319MiB(6%)][#f4c3f6 29MiB/3.9GiB(0%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 17MiB/3.9GiB(0%)][#322a43 25MiB/319MiB(7%)][#f4c3f6 34MiB/3.9GiB(0%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 20MiB/3.9GiB(0%)][#322a43 28MiB/319MiB(8%)][#f4c3f6 39MiB/3.9GiB(0%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 22MiB/3.9GiB(0%)][#322a43 32MiB/319MiB(10%)][#f4c3f6 44MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 26MiB/3.9GiB(0%)][#322a43 36MiB/319MiB(11%)][#f4c3f6 48MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 30MiB/3.9GiB(0%)][#322a43 38MiB/319MiB(12%)][#f4c3f6 52MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 34MiB/3.9GiB(0%)][#322a43 42MiB/319MiB(13%)][#f4c3f6 56MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 37MiB/3.9GiB(0%)][#322a43 45MiB/319MiB(14%)][#f4c3f6 61MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 41MiB/3.9GiB(1%)][#322a43 48MiB/319MiB(15%)][#f4c3f6 65MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 44MiB/3.9GiB(1%)][#322a43 52MiB/319MiB(16%)][#f4c3f6 70MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 47MiB/3.9GiB(1%)][#322a43 55MiB/319MiB(17%)][#f4c3f6 75MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 50MiB/3.9GiB(1%)][#322a43 58MiB/319MiB(18%)][#f4c3f6 79MiB/3.9GiB(1%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 54MiB/3.9GiB(1%)][#322a43 61MiB/319MiB(19%)][#f4c3f6 84MiB/3.9GiB(2%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 57MiB/3.9GiB(1%)][#322a43 64MiB/319MiB(20%)][#f4c3f6 89MiB/3.9GiB(2%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 60MiB/3.9GiB(1%)][#322a43 67MiB/319MiB(21%)][#f4c3f6 94MiB/3.9GiB(2%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:05:47 [ERROR] CUID#8 - Download aborted. URI=https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | Exception: [SocketCore.cc:885] errorCode=1 Failed to receive data, cause: Error in the pull function.
+webui-docker-download-1  | [DL:11MiB][#216a7a 62MiB/3.9GiB(1%)][#322a43 68MiB/319MiB(21%)][#f4c3f6 101MiB/3.9GiB(2%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 66MiB/3.9GiB(1%)][#322a43 69MiB/319MiB(21%)][#f4c3f6 108MiB/3.9GiB(2%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 69MiB/3.9GiB(1%)][#322a43 70MiB/319MiB(22%)][#f4c3f6 115MiB/3.9GiB(2%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 72MiB/3.9GiB(1%)][#322a43 72MiB/319MiB(22%)][#f4c3f6 121MiB/3.9GiB(2%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 75MiB/3.9GiB(1%)][#322a43 73MiB/319MiB(23%)][#f4c3f6 127MiB/3.9GiB(3%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 78MiB/3.9GiB(1%)][#322a43 75MiB/319MiB(23%)][#f4c3f6 133MiB/3.9GiB(3%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 81MiB/3.9GiB(2%)][#322a43 77MiB/319MiB(24%)][#f4c3f6 140MiB/3.9GiB(3%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 84MiB/3.9GiB(2%)][#322a43 78MiB/319MiB(24%)][#f4c3f6 147MiB/3.9GiB(3%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 86MiB/3.9GiB(2%)][#322a43 80MiB/319MiB(25%)][#f4c3f6 154MiB/3.9GiB(3%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 89MiB/3.9GiB(2%)][#322a43 81MiB/319MiB(25%)][#f4c3f6 161MiB/3.9GiB(3%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 92MiB/3.9GiB(2%)][#322a43 83MiB/319MiB(26%)][#f4c3f6 169MiB/3.9GiB(4%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 94MiB/3.9GiB(2%)][#322a43 84MiB/319MiB(26%)][#f4c3f6 176MiB/3.9GiB(4%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 97MiB/3.9GiB(2%)][#322a43 86MiB/319MiB(26%)][#f4c3f6 183MiB/3.9GiB(4%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 99MiB/3.9GiB(2%)][#322a43 86MiB/319MiB(27%)][#f4c3f6 186MiB/3.9GiB(4%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 102MiB/3.9GiB(2%)][#322a43 87MiB/319MiB(27%)][#f4c3f6 193MiB/3.9GiB(4%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 107MiB/3.9GiB(2%)][#322a43 88MiB/319MiB(27%)][#f4c3f6 200MiB/3.9GiB(4%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 111MiB/3.9GiB(2%)][#322a43 89MiB/319MiB(28%)][#f4c3f6 206MiB/3.9GiB(5%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 115MiB/3.9GiB(2%)][#322a43 90MiB/319MiB(28%)][#f4c3f6 213MiB/3.9GiB(5%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 118MiB/3.9GiB(2%)][#322a43 91MiB/319MiB(28%)][#f4c3f6 220MiB/3.9GiB(5%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 122MiB/3.9GiB(2%)][#322a43 92MiB/319MiB(28%)][#f4c3f6 227MiB/3.9GiB(5%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 125MiB/3.9GiB(3%)][#322a43 93MiB/319MiB(29%)][#f4c3f6 234MiB/3.9GiB(5%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 128MiB/3.9GiB(3%)][#322a43 94MiB/319MiB(29%)][#f4c3f6 241MiB/3.9GiB(5%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 131MiB/3.9GiB(3%)][#322a43 94MiB/319MiB(29%)][#f4c3f6 248MiB/3.9GiB(6%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 133MiB/3.9GiB(3%)][#322a43 95MiB/319MiB(29%)][#f4c3f6 255MiB/3.9GiB(6%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 136MiB/3.9GiB(3%)][#322a43 96MiB/319MiB(30%)][#f4c3f6 263MiB/3.9GiB(6%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 139MiB/3.9GiB(3%)][#322a43 97MiB/319MiB(30%)][#f4c3f6 270MiB/3.9GiB(6%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 142MiB/3.9GiB(3%)][#322a43 98MiB/319MiB(30%)][#f4c3f6 278MiB/3.9GiB(6%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 145MiB/3.9GiB(3%)][#322a43 99MiB/319MiB(31%)][#f4c3f6 285MiB/3.9GiB(7%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 148MiB/3.9GiB(3%)][#322a43 100MiB/319MiB(31%)][#f4c3f6 292MiB/3.9GiB(7%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 150MiB/3.9GiB(3%)][#322a43 101MiB/319MiB(31%)][#f4c3f6 299MiB/3.9GiB(7%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 154MiB/3.9GiB(3%)][#322a43 103MiB/319MiB(32%)][#f4c3f6 306MiB/3.9GiB(7%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 156MiB/3.9GiB(3%)][#322a43 104MiB/319MiB(32%)][#f4c3f6 313MiB/3.9GiB(7%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 159MiB/3.9GiB(3%)][#322a43 106MiB/319MiB(33%)][#f4c3f6 321MiB/3.9GiB(7%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 162MiB/3.9GiB(3%)][#322a43 107MiB/319MiB(33%)][#f4c3f6 326MiB/3.9GiB(8%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 165MiB/3.9GiB(4%)][#322a43 109MiB/319MiB(34%)][#f4c3f6 332MiB/3.9GiB(8%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 169MiB/3.9GiB(4%)][#322a43 111MiB/319MiB(34%)][#f4c3f6 337MiB/3.9GiB(8%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 173MiB/3.9GiB(4%)][#322a43 112MiB/319MiB(35%)][#f4c3f6 343MiB/3.9GiB(8%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 177MiB/3.9GiB(4%)][#322a43 114MiB/319MiB(35%)][#f4c3f6 349MiB/3.9GiB(8%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 181MiB/3.9GiB(4%)][#322a43 116MiB/319MiB(36%)][#f4c3f6 355MiB/3.9GiB(8%)]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:06:28 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 182MiB/3.9GiB(4%) CN:3 DL:2.7MiB ETA:23m46s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#322a43 116MiB/319MiB(36%) CN:2 DL:1.2MiB ETA:2m39s]
+webui-docker-download-1  | FILE: /data/VAE/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 357MiB/3.9GiB(8%) CN:3 DL:4.5MiB ETA:13m34s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:8.5MiB][#216a7a 182MiB/3.9GiB(4%)][#322a43 116MiB/319MiB(36%)][#f4c3f6 357MiB/3.9GiB(8%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 189MiB/3.9GiB(4%)][#322a43 121MiB/319MiB(37%)][#f4c3f6 372MiB/3.9GiB(9%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 191MiB/3.9GiB(4%)][#322a43 123MiB/319MiB(38%)][#f4c3f6 378MiB/3.9GiB(9%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 193MiB/3.9GiB(4%)][#322a43 125MiB/319MiB(39%)][#f4c3f6 384MiB/3.9GiB(9%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 196MiB/3.9GiB(4%)][#322a43 128MiB/319MiB(40%)][#f4c3f6 389MiB/3.9GiB(9%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 198MiB/3.9GiB(4%)][#322a43 132MiB/319MiB(41%)][#f4c3f6 395MiB/3.9GiB(9%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 200MiB/3.9GiB(4%)][#322a43 135MiB/319MiB(42%)][#f4c3f6 402MiB/3.9GiB(9%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 203MiB/3.9GiB(4%)][#322a43 139MiB/319MiB(43%)][#f4c3f6 408MiB/3.9GiB(10%)]
+webui-docker-download-1  | [DL:14MiB][#216a7a 206MiB/3.9GiB(5%)][#322a43 149MiB/319MiB(46%)][#f4c3f6 415MiB/3.9GiB(10%)]
+webui-docker-download-1  | [DL:14MiB][#216a7a 209MiB/3.9GiB(5%)][#322a43 159MiB/319MiB(50%)][#f4c3f6 421MiB/3.9GiB(10%)]
+webui-docker-download-1  | [DL:15MiB][#216a7a 213MiB/3.9GiB(5%)][#322a43 169MiB/319MiB(53%)][#f4c3f6 428MiB/3.9GiB(10%)]
+webui-docker-download-1  | [DL:15MiB][#216a7a 216MiB/3.9GiB(5%)][#322a43 181MiB/319MiB(56%)][#f4c3f6 435MiB/3.9GiB(10%)]
+webui-docker-download-1  | [DL:16MiB][#216a7a 220MiB/3.9GiB(5%)][#322a43 192MiB/319MiB(60%)][#f4c3f6 442MiB/3.9GiB(10%)]
+webui-docker-download-1  | [DL:16MiB][#216a7a 222MiB/3.9GiB(5%)][#322a43 199MiB/319MiB(62%)][#f4c3f6 447MiB/3.9GiB(10%)]
+webui-docker-download-1  | [DL:17MiB][#216a7a 225MiB/3.9GiB(5%)][#322a43 210MiB/319MiB(66%)][#f4c3f6 451MiB/3.9GiB(11%)]
+webui-docker-download-1  | [DL:17MiB][#216a7a 228MiB/3.9GiB(5%)][#322a43 218MiB/319MiB(68%)][#f4c3f6 457MiB/3.9GiB(11%)]
+webui-docker-download-1  | [DL:18MiB][#216a7a 233MiB/3.9GiB(5%)][#322a43 227MiB/319MiB(71%)][#f4c3f6 464MiB/3.9GiB(11%)]
+webui-docker-download-1  | [DL:18MiB][#216a7a 236MiB/3.9GiB(5%)][#322a43 234MiB/319MiB(73%)][#f4c3f6 468MiB/3.9GiB(11%)]
+webui-docker-download-1  | [DL:18MiB][#216a7a 240MiB/3.9GiB(5%)][#322a43 242MiB/319MiB(75%)][#f4c3f6 474MiB/3.9GiB(11%)]
+webui-docker-download-1  | [DL:18MiB][#216a7a 244MiB/3.9GiB(5%)][#322a43 249MiB/319MiB(78%)][#f4c3f6 479MiB/3.9GiB(11%)]
+webui-docker-download-1  | [DL:17MiB][#216a7a 246MiB/3.9GiB(6%)][#322a43 256MiB/319MiB(80%)][#f4c3f6 483MiB/3.9GiB(11%)]
+webui-docker-download-1  | [DL:17MiB][#216a7a 250MiB/3.9GiB(6%)][#322a43 266MiB/319MiB(83%)][#f4c3f6 488MiB/3.9GiB(12%)]
+webui-docker-download-1  | [DL:16MiB][#216a7a 253MiB/3.9GiB(6%)][#322a43 274MiB/319MiB(86%)][#f4c3f6 493MiB/3.9GiB(12%)]
+webui-docker-download-1  | [DL:16MiB][#216a7a 256MiB/3.9GiB(6%)][#322a43 281MiB/319MiB(88%)][#f4c3f6 498MiB/3.9GiB(12%)]
+webui-docker-download-1  | [DL:16MiB][#216a7a 259MiB/3.9GiB(6%)][#322a43 287MiB/319MiB(90%)][#f4c3f6 503MiB/3.9GiB(12%)]
+webui-docker-download-1  | [DL:16MiB][#216a7a 263MiB/3.9GiB(6%)][#322a43 296MiB/319MiB(93%)][#f4c3f6 509MiB/3.9GiB(12%)]
+webui-docker-download-1  | [DL:16MiB][#216a7a 266MiB/3.9GiB(6%)][#322a43 306MiB/319MiB(95%)][#f4c3f6 517MiB/3.9GiB(12%)]
+webui-docker-download-1  | [DL:16MiB][#216a7a 268MiB/3.9GiB(6%)][#322a43 313MiB/319MiB(98%)][#f4c3f6 523MiB/3.9GiB(12%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:06:57 [NOTICE] Download complete: /data/VAE/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | [DL:15MiB][#216a7a 272MiB/3.9GiB(6%)][#f4c3f6 528MiB/3.9GiB(12%)]
+webui-docker-download-1  | [DL:15MiB][#216a7a 278MiB/3.9GiB(6%)][#f4c3f6 541MiB/3.9GiB(13%)]
+webui-docker-download-1  | [DL:14MiB][#216a7a 281MiB/3.9GiB(6%)][#f4c3f6 548MiB/3.9GiB(13%)]
+webui-docker-download-1  | [DL:14MiB][#216a7a 285MiB/3.9GiB(7%)][#f4c3f6 556MiB/3.9GiB(13%)]
+webui-docker-download-1  | [DL:13MiB][#216a7a 288MiB/3.9GiB(7%)][#f4c3f6 564MiB/3.9GiB(13%)]
+webui-docker-download-1  | [DL:13MiB][#216a7a 292MiB/3.9GiB(7%)][#f4c3f6 572MiB/3.9GiB(14%)]
+webui-docker-download-1  | [DL:13MiB][#216a7a 296MiB/3.9GiB(7%)][#f4c3f6 579MiB/3.9GiB(14%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 300MiB/3.9GiB(7%)][#f4c3f6 586MiB/3.9GiB(14%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 304MiB/3.9GiB(7%)][#f4c3f6 593MiB/3.9GiB(14%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 308MiB/3.9GiB(7%)][#f4c3f6 601MiB/3.9GiB(14%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 310MiB/3.9GiB(7%)][#f4c3f6 609MiB/3.9GiB(14%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 313MiB/3.9GiB(7%)][#f4c3f6 618MiB/3.9GiB(15%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 315MiB/3.9GiB(7%)][#f4c3f6 627MiB/3.9GiB(15%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 318MiB/3.9GiB(7%)][#f4c3f6 635MiB/3.9GiB(15%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 321MiB/3.9GiB(7%)][#f4c3f6 643MiB/3.9GiB(15%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 323MiB/3.9GiB(7%)][#f4c3f6 652MiB/3.9GiB(16%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 326MiB/3.9GiB(8%)][#f4c3f6 660MiB/3.9GiB(16%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 330MiB/3.9GiB(8%)][#f4c3f6 668MiB/3.9GiB(16%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 333MiB/3.9GiB(8%)][#f4c3f6 676MiB/3.9GiB(16%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 337MiB/3.9GiB(8%)][#f4c3f6 683MiB/3.9GiB(16%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 343MiB/3.9GiB(8%)][#f4c3f6 689MiB/3.9GiB(16%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 348MiB/3.9GiB(8%)][#f4c3f6 694MiB/3.9GiB(17%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 352MiB/3.9GiB(8%)][#f4c3f6 700MiB/3.9GiB(17%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 357MiB/3.9GiB(8%)][#f4c3f6 707MiB/3.9GiB(17%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 362MiB/3.9GiB(8%)][#f4c3f6 714MiB/3.9GiB(17%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 366MiB/3.9GiB(9%)][#f4c3f6 720MiB/3.9GiB(17%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 370MiB/3.9GiB(9%)][#f4c3f6 728MiB/3.9GiB(17%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 375MiB/3.9GiB(9%)][#f4c3f6 735MiB/3.9GiB(18%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 378MiB/3.9GiB(9%)][#f4c3f6 742MiB/3.9GiB(18%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 383MiB/3.9GiB(9%)][#f4c3f6 748MiB/3.9GiB(18%)]
+webui-docker-download-1  | [DL:8.6MiB][#216a7a 384MiB/3.9GiB(9%)][#f4c3f6 751MiB/3.9GiB(18%)]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:07:29 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 391MiB/3.9GiB(9%) CN:2 DL:3.6MiB ETA:16m35s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 768MiB/3.9GiB(18%) CN:3 DL:6.5MiB ETA:8m25s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:10MiB][#216a7a 391MiB/3.9GiB(9%)][#f4c3f6 768MiB/3.9GiB(18%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:07:30 [ERROR] CUID#38 - Download aborted. URI=https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  | [DL:10MiB][#216a7a 394MiB/3.9GiB(9%)][#f4c3f6 777MiB/3.9GiB(19%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 396MiB/3.9GiB(9%)][#f4c3f6 786MiB/3.9GiB(19%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 398MiB/3.9GiB(9%)][#f4c3f6 795MiB/3.9GiB(19%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 401MiB/3.9GiB(9%)][#f4c3f6 803MiB/3.9GiB(19%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 405MiB/3.9GiB(9%)][#f4c3f6 811MiB/3.9GiB(19%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 408MiB/3.9GiB(10%)][#f4c3f6 819MiB/3.9GiB(20%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 412MiB/3.9GiB(10%)][#f4c3f6 826MiB/3.9GiB(20%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 415MiB/3.9GiB(10%)][#f4c3f6 833MiB/3.9GiB(20%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 420MiB/3.9GiB(10%)][#f4c3f6 840MiB/3.9GiB(20%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 425MiB/3.9GiB(10%)][#f4c3f6 846MiB/3.9GiB(20%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 430MiB/3.9GiB(10%)][#f4c3f6 853MiB/3.9GiB(20%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 435MiB/3.9GiB(10%)][#f4c3f6 859MiB/3.9GiB(21%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 439MiB/3.9GiB(10%)][#f4c3f6 865MiB/3.9GiB(21%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 444MiB/3.9GiB(10%)][#f4c3f6 872MiB/3.9GiB(21%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 449MiB/3.9GiB(11%)][#f4c3f6 879MiB/3.9GiB(21%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 453MiB/3.9GiB(11%)][#f4c3f6 886MiB/3.9GiB(21%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 458MiB/3.9GiB(11%)][#f4c3f6 893MiB/3.9GiB(21%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 463MiB/3.9GiB(11%)][#f4c3f6 898MiB/3.9GiB(22%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 468MiB/3.9GiB(11%)][#f4c3f6 904MiB/3.9GiB(22%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 473MiB/3.9GiB(11%)][#f4c3f6 911MiB/3.9GiB(22%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 478MiB/3.9GiB(11%)][#f4c3f6 917MiB/3.9GiB(22%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 483MiB/3.9GiB(11%)][#f4c3f6 0.9GiB/3.9GiB(22%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 487MiB/3.9GiB(11%)][#f4c3f6 0.9GiB/3.9GiB(22%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 491MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(23%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 495MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(23%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 499MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(23%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 503MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(23%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 506MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(23%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 509MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(23%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 513MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(24%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 516MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(24%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 520MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(24%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 523MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(24%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 527MiB/3.9GiB(12%)][#f4c3f6 0.9GiB/3.9GiB(24%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 530MiB/3.9GiB(13%)][#f4c3f6 0.9GiB/3.9GiB(25%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 533MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(25%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 536MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(25%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 540MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(25%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 543MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(25%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 549MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(26%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 553MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(26%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 557MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(26%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 561MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(26%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 566MiB/3.9GiB(13%)][#f4c3f6 1.0GiB/3.9GiB(26%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 570MiB/3.9GiB(14%)][#f4c3f6 1.0GiB/3.9GiB(26%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 573MiB/3.9GiB(14%)][#f4c3f6 1.0GiB/3.9GiB(27%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 577MiB/3.9GiB(14%)][#f4c3f6 1.0GiB/3.9GiB(27%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 581MiB/3.9GiB(14%)][#f4c3f6 1.0GiB/3.9GiB(27%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 584MiB/3.9GiB(14%)][#f4c3f6 1.0GiB/3.9GiB(27%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 588MiB/3.9GiB(14%)][#f4c3f6 1.1GiB/3.9GiB(27%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 592MiB/3.9GiB(14%)][#f4c3f6 1.1GiB/3.9GiB(27%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 595MiB/3.9GiB(14%)][#f4c3f6 1.1GiB/3.9GiB(28%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 599MiB/3.9GiB(14%)][#f4c3f6 1.1GiB/3.9GiB(28%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 602MiB/3.9GiB(14%)][#f4c3f6 1.1GiB/3.9GiB(28%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 606MiB/3.9GiB(14%)][#f4c3f6 1.1GiB/3.9GiB(28%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 611MiB/3.9GiB(15%)][#f4c3f6 1.1GiB/3.9GiB(28%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 615MiB/3.9GiB(15%)][#f4c3f6 1.1GiB/3.9GiB(29%)]
+webui-docker-download-1  | [DL:9.2MiB][#216a7a 616MiB/3.9GiB(15%)][#f4c3f6 1.1GiB/3.9GiB(29%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 623MiB/3.9GiB(15%)][#f4c3f6 1.1GiB/3.9GiB(29%)]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:08:30 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 627MiB/3.9GiB(15%) CN:1 DL:3.6MiB ETA:15m31s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 1.1GiB/3.9GiB(29%) CN:3 DL:6.9MiB ETA:6m49s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:10MiB][#216a7a 627MiB/3.9GiB(15%)][#f4c3f6 1.1GiB/3.9GiB(29%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 630MiB/3.9GiB(15%)][#f4c3f6 1.1GiB/3.9GiB(29%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 634MiB/3.9GiB(15%)][#f4c3f6 1.1GiB/3.9GiB(29%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 638MiB/3.9GiB(15%)][#f4c3f6 1.1GiB/3.9GiB(30%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 641MiB/3.9GiB(15%)][#f4c3f6 1.2GiB/3.9GiB(30%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 645MiB/3.9GiB(15%)][#f4c3f6 1.2GiB/3.9GiB(30%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 648MiB/3.9GiB(15%)][#f4c3f6 1.2GiB/3.9GiB(30%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 652MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(30%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 656MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(31%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 661MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(31%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 666MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(31%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 670MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(31%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 676MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(31%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 680MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(31%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 685MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(31%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 689MiB/3.9GiB(16%)][#f4c3f6 1.2GiB/3.9GiB(32%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 694MiB/3.9GiB(17%)][#f4c3f6 1.2GiB/3.9GiB(32%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 698MiB/3.9GiB(17%)][#f4c3f6 1.2GiB/3.9GiB(32%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 700MiB/3.9GiB(17%)][#f4c3f6 1.2GiB/3.9GiB(32%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 703MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(32%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 705MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(33%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 708MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(33%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 710MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(33%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 713MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(33%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 716MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(33%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 719MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(34%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 723MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(34%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 726MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(34%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 731MiB/3.9GiB(17%)][#f4c3f6 1.3GiB/3.9GiB(34%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 736MiB/3.9GiB(18%)][#f4c3f6 1.3GiB/3.9GiB(34%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 742MiB/3.9GiB(18%)][#f4c3f6 1.3GiB/3.9GiB(35%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 747MiB/3.9GiB(18%)][#f4c3f6 1.3GiB/3.9GiB(35%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 752MiB/3.9GiB(18%)][#f4c3f6 1.4GiB/3.9GiB(35%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 757MiB/3.9GiB(18%)][#f4c3f6 1.4GiB/3.9GiB(35%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 762MiB/3.9GiB(18%)][#f4c3f6 1.4GiB/3.9GiB(35%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 767MiB/3.9GiB(18%)][#f4c3f6 1.4GiB/3.9GiB(35%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 771MiB/3.9GiB(18%)][#f4c3f6 1.4GiB/3.9GiB(35%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 775MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(36%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 780MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(36%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 784MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(36%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 788MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(36%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 792MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(36%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 796MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(36%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 801MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(37%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 805MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(37%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 808MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(37%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 812MiB/3.9GiB(19%)][#f4c3f6 1.4GiB/3.9GiB(37%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 816MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(37%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 820MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(38%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 825MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(38%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 829MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(38%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 830MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(38%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 834MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(38%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 837MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(39%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 840MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(39%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 843MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(39%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 846MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(39%)]
+webui-docker-download-1  | [DL:8.9MiB][#216a7a 847MiB/3.9GiB(20%)][#f4c3f6 1.5GiB/3.9GiB(39%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 856MiB/3.9GiB(21%)][#f4c3f6 1.5GiB/3.9GiB(40%)]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:09:30 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 860MiB/3.9GiB(21%) CN:1 DL:3.1MiB ETA:16m48s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 1.5GiB/3.9GiB(40%) CN:3 DL:7.2MiB ETA:5m33s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:10MiB][#216a7a 860MiB/3.9GiB(21%)][#f4c3f6 1.5GiB/3.9GiB(40%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:09:30 [ERROR] CUID#33 - Download aborted. URI=https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  | [DL:10MiB][#216a7a 864MiB/3.9GiB(21%)][#f4c3f6 1.6GiB/3.9GiB(40%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 868MiB/3.9GiB(21%)][#f4c3f6 1.6GiB/3.9GiB(40%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 872MiB/3.9GiB(21%)][#f4c3f6 1.6GiB/3.9GiB(40%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 877MiB/3.9GiB(21%)][#f4c3f6 1.6GiB/3.9GiB(40%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 883MiB/3.9GiB(21%)][#f4c3f6 1.6GiB/3.9GiB(41%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 887MiB/3.9GiB(21%)][#f4c3f6 1.6GiB/3.9GiB(41%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 892MiB/3.9GiB(21%)][#f4c3f6 1.6GiB/3.9GiB(41%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 898MiB/3.9GiB(22%)][#f4c3f6 1.6GiB/3.9GiB(41%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 903MiB/3.9GiB(22%)][#f4c3f6 1.6GiB/3.9GiB(41%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 908MiB/3.9GiB(22%)][#f4c3f6 1.6GiB/3.9GiB(41%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 913MiB/3.9GiB(22%)][#f4c3f6 1.6GiB/3.9GiB(41%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 915MiB/3.9GiB(22%)][#f4c3f6 1.6GiB/3.9GiB(42%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 918MiB/3.9GiB(22%)][#f4c3f6 1.6GiB/3.9GiB(42%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(22%)][#f4c3f6 1.6GiB/3.9GiB(42%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(22%)][#f4c3f6 1.6GiB/3.9GiB(42%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0.9GiB/3.9GiB(22%)][#f4c3f6 1.7GiB/3.9GiB(42%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0.9GiB/3.9GiB(22%)][#f4c3f6 1.7GiB/3.9GiB(43%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0.9GiB/3.9GiB(22%)][#f4c3f6 1.7GiB/3.9GiB(43%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(43%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(43%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(43%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(44%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(44%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(44%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(44%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(44%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(44%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.7GiB/3.9GiB(45%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.8GiB/3.9GiB(45%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(23%)][#f4c3f6 1.8GiB/3.9GiB(45%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(45%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(45%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(46%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(46%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(46%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(46%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(46%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(47%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(47%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(47%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.8GiB/3.9GiB(47%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.9GiB/3.9GiB(47%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(24%)][#f4c3f6 1.9GiB/3.9GiB(48%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(48%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 0.9GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(48%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(48%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(48%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(49%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(49%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(49%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(49%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(49%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(50%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 1.9GiB/3.9GiB(50%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(25%)][#f4c3f6 2.0GiB/3.9GiB(50%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(50%)]
+webui-docker-download-1  | [DL:9.4MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(50%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(51%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(51%)]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:10:31 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 1.0GiB/3.9GiB(26%) CN:1 DL:3.1MiB ETA:15m54s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 2.0GiB/3.9GiB(51%) CN:2 DL:7.7MiB ETA:4m15s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(51%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(51%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(51%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(52%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(52%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(52%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.0GiB/3.9GiB(52%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.1GiB/3.9GiB(53%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.1GiB/3.9GiB(53%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.1GiB/3.9GiB(53%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(26%)][#f4c3f6 2.1GiB/3.9GiB(53%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(53%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(54%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(54%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(54%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(54%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.0GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(54%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(54%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.0GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(55%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(27%)][#f4c3f6 2.1GiB/3.9GiB(55%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(27%)][#f4c3f6 2.2GiB/3.9GiB(55%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(27%)][#f4c3f6 2.2GiB/3.9GiB(55%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.1GiB/3.9GiB(27%)][#f4c3f6 2.2GiB/3.9GiB(55%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(27%)][#f4c3f6 2.2GiB/3.9GiB(56%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(56%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(56%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(56%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(56%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(57%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(57%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(57%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(57%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.2GiB/3.9GiB(57%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.3GiB/3.9GiB(58%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.3GiB/3.9GiB(58%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.3GiB/3.9GiB(58%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.3GiB/3.9GiB(58%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(28%)][#f4c3f6 2.3GiB/3.9GiB(58%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.3GiB/3.9GiB(59%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.3GiB/3.9GiB(59%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.3GiB/3.9GiB(59%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.3GiB/3.9GiB(59%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.3GiB/3.9GiB(59%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.3GiB/3.9GiB(59%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.3GiB/3.9GiB(60%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.3GiB/3.9GiB(60%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.4GiB/3.9GiB(60%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.4GiB/3.9GiB(60%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(29%)][#f4c3f6 2.4GiB/3.9GiB(61%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(61%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.1GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(61%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(61%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(61%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(61%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(62%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.2GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(62%)]
+webui-docker-download-1  | [DL:7.9MiB][#216a7a 1.2GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(62%)]
+webui-docker-download-1  | [DL:9.6MiB][#216a7a 1.2GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(62%)]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:11:31 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 1.2GiB/3.9GiB(30%) CN:1 DL:2.9MiB ETA:15m50s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  | [#f4c3f6 2.4GiB/3.9GiB(62%) CN:2 DL:6.2MiB ETA:4m]
+webui-docker-download-1  | FILE: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [DL:9.3MiB][#216a7a 1.2GiB/3.9GiB(30%)][#f4c3f6 2.4GiB/3.9GiB(62%)]
+webui-docker-download-1  | [DL:9.3MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(63%)]
+webui-docker-download-1  | [DL:9.5MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(63%)]
+webui-docker-download-1  | [DL:9.3MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(63%)]
+webui-docker-download-1  | [DL:9.4MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(63%)]
+webui-docker-download-1  | [DL:13MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(63%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(64%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(64%)]
+webui-docker-download-1  | [DL:12MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(64%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(64%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(64%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(65%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.5GiB/3.9GiB(65%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.6GiB/3.9GiB(65%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.6GiB/3.9GiB(65%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(31%)][#f4c3f6 2.6GiB/3.9GiB(65%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(66%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(66%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(66%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(66%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:11:51 [ERROR] CUID#32 - Download aborted. URI=https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://cdn-lfs.huggingface.co/repos/28/5e/285eb65c80a79a0d555ab9f79ed524aac4548cceb7a5e49c9084f0633c51009a/c6bbc15e3224e6973459ba78de4998b80b50112b0ae5b5c67113d56b4e366b19?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27sd-v1-5-inpainting.ckpt%3B+filename%3D%22sd-v1-5-inpainting.ckpt%22%3B&Expires=1685350547&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzI4LzVlLzI4NWViNjVjODBhNzlhMGQ1NTVhYjlmNzllZDUyNGFhYzQ1NDhjY2ViN2E1ZTQ5YzkwODRmMDYzM2M1MTAwOWEvYzZiYmMxNWUzMjI0ZTY5NzM0NTliYTc4ZGU0OTk4YjgwYjUwMTEyYjBhZTViNWM2NzExM2Q1NmI0ZTM2NmIxOT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNTA1NDd9fX1dfQ__&Signature=EgZhRpzINZXd-gkc-mLYVy7OzT7OcY30TvI%7En-fYDVzwczgHX1tvdwNuF4TcSu5Zqm57w4HcEDp8mD-5nFV7W4KyGb5SMwEzFHjG2KFI%7EkCBNerMtPWQ-4uyJF5kYg59jiFE5Ov-FZGoTEe1tgqSwm0dvqc6BVxovk0Y2Ja1ATvRCysFcYwnmR4Utm1ggjWlZJ3hFyRhmawwgNfMu105aca2cXog9lQ7NtuOLEL0o51SbClGrGSZ0TudpPz%7Ei7gKZRlkFK-rGxxZr0PrtLZ8ZAQRWGdIUdh4vtKSl0cqzye%7E-desuR0uJjNhSllmFfOIrvSpfnU1XnrH%7EI1-IvmiQQ__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(66%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(67%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.2GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(67%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.3GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(67%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.3GiB/3.9GiB(32%)][#f4c3f6 2.6GiB/3.9GiB(67%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.3GiB/3.9GiB(33%)][#f4c3f6 2.6GiB/3.9GiB(67%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.3GiB/3.9GiB(33%)][#f4c3f6 2.6GiB/3.9GiB(67%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.3GiB/3.9GiB(33%)][#f4c3f6 2.6GiB/3.9GiB(67%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.3GiB/3.9GiB(33%)][#f4c3f6 2.7GiB/3.9GiB(68%)]
+webui-docker-download-1  | [DL:11MiB][#216a7a 1.3GiB/3.9GiB(33%)][#f4c3f6 2.7GiB/3.9GiB(68%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.3GiB/3.9GiB(33%)][#f4c3f6 2.7GiB/3.9GiB(68%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.3GiB/3.9GiB(33%)][#f4c3f6 2.7GiB/3.9GiB(68%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.3GiB/3.9GiB(33%)][#f4c3f6 2.7GiB/3.9GiB(68%)]
+webui-docker-download-1  | [DL:10MiB][#216a7a 1.3GiB/3.9GiB(34%)][#f4c3f6 2.7GiB/3.9GiB(68%)]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:12:04 [ERROR] CUID#9 - Download aborted. URI=https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://cdn-lfs.huggingface.co/repos/28/5e/285eb65c80a79a0d555ab9f79ed524aac4548cceb7a5e49c9084f0633c51009a/c6bbc15e3224e6973459ba78de4998b80b50112b0ae5b5c67113d56b4e366b19?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27sd-v1-5-inpainting.ckpt%3B+filename%3D%22sd-v1-5-inpainting.ckpt%22%3B&Expires=1685350264&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzI4LzVlLzI4NWViNjVjODBhNzlhMGQ1NTVhYjlmNzllZDUyNGFhYzQ1NDhjY2ViN2E1ZTQ5YzkwODRmMDYzM2M1MTAwOWEvYzZiYmMxNWUzMjI0ZTY5NzM0NTliYTc4ZGU0OTk4YjgwYjUwMTEyYjBhZTViNWM2NzExM2Q1NmI0ZTM2NmIxOT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODUzNTAyNjR9fX1dfQ__&Signature=cZ6dLZGr03Jd12tjG3yZaqs2v-WSA07AqKCWU6it0Fb-pw59nbikgk-KMClPOAk8G9Vf5DRCfptFuIaRSLIFdb1O5L-msky-AC6u62vcjujgeDR%7Epgv4p4p4xASPVIynZddLmiaY105LTdwnLiOqk-1YLut1MKGmxvDEAPtXdw8vnxxJdoidPTMuqCjETXeDBjrUGBkQPzV%7Etim4N6s69EhlxWa58DPdsljBG8iz4Y7xKRJls0gyGQQ7znmK%7EHAeE3%7EHyKlTXXZ9UdYVHUgJBd5RizIdR6QPaw9Z5BpQvELJbE45Pe9X9op5kDvxblbsCtlDlo4AnRdbCOOUnljIZA__&Key-Pair-Id=KVTP0A1DKRTAX
+webui-docker-download-1  |   -> [SocketCore.cc:1018] errorCode=1 SSL/TLS handshake failure: Error in the pull function.
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:12:05 [NOTICE] Download GID#f4c3f61a1971a4b6 not complete: /data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | [#216a7a 1.3GiB/3.9GiB(34%) CN:1 DL:5.6MiB ETA:7m56s]
+webui-docker-download-1  | [#216a7a 1.3GiB/3.9GiB(34%) CN:1 DL:5.8MiB ETA:7m37s]
+webui-docker-download-1  | [#216a7a 1.3GiB/3.9GiB(34%) CN:1 DL:6.1MiB ETA:7m12s]
+webui-docker-download-1  | [#216a7a 1.3GiB/3.9GiB(34%) CN:1 DL:6.6MiB ETA:6m39s]
+webui-docker-download-1  | [#216a7a 1.3GiB/3.9GiB(35%) CN:1 DL:6.9MiB ETA:6m16s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(35%) CN:1 DL:7.3MiB ETA:5m56s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(35%) CN:1 DL:7.8MiB ETA:5m33s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(35%) CN:1 DL:8.2MiB ETA:5m16s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(36%) CN:1 DL:8.7MiB ETA:4m58s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(36%) CN:1 DL:9.3MiB ETA:4m36s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(36%) CN:1 DL:9.4MiB ETA:4m33s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(36%) CN:1 DL:9.8MiB ETA:4m21s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(37%) CN:1 DL:9.6MiB ETA:4m25s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(37%) CN:1 DL:9.3MiB ETA:4m32s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(37%) CN:1 DL:9.5MiB ETA:4m27s]
+webui-docker-download-1  | [#216a7a 1.4GiB/3.9GiB(37%) CN:1 DL:9.4MiB ETA:4m28s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(37%) CN:1 DL:9.3MiB ETA:4m29s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(38%) CN:1 DL:9.5MiB ETA:4m24s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(38%) CN:1 DL:9.3MiB ETA:4m28s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(38%) CN:1 DL:9.1MiB ETA:4m32s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(38%) CN:1 DL:8.9MiB ETA:4m36s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(39%) CN:1 DL:9.0MiB ETA:4m33s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(39%) CN:1 DL:9.4MiB ETA:4m20s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(39%) CN:1 DL:9.1MiB ETA:4m30s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(39%) CN:1 DL:9.1MiB ETA:4m26s]
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(40%) CN:1 DL:9.4MiB ETA:4m17s]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:12:31 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(40%) CN:1 DL:9.5MiB ETA:4m14s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [#216a7a 1.5GiB/3.9GiB(40%) CN:1 DL:9.5MiB ETA:4m14s]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(40%) CN:1 DL:9.7MiB ETA:4m8s]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(40%) CN:1 DL:9.9MiB ETA:4m2s]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(41%) CN:1 DL:9.9MiB ETA:4m1s]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(41%) CN:1 DL:9.9MiB ETA:4m]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(41%) CN:1 DL:9.9MiB ETA:3m59s]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(41%) CN:1 DL:10MiB ETA:3m46s]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(42%) CN:1 DL:10MiB ETA:3m42s]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(42%) CN:1 DL:10MiB ETA:3m42s]
+webui-docker-download-1  | [#216a7a 1.6GiB/3.9GiB(42%) CN:1 DL:10MiB ETA:3m35s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(42%) CN:1 DL:10MiB ETA:3m39s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(43%) CN:1 DL:10MiB ETA:3m47s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(43%) CN:1 DL:10MiB ETA:3m46s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(43%) CN:1 DL:10MiB ETA:3m45s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(43%) CN:1 DL:10MiB ETA:3m40s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(44%) CN:1 DL:10MiB ETA:3m43s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(44%) CN:1 DL:10MiB ETA:3m38s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(44%) CN:1 DL:10MiB ETA:3m38s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(44%) CN:1 DL:10MiB ETA:3m32s]
+webui-docker-download-1  | [#216a7a 1.7GiB/3.9GiB(45%) CN:1 DL:10MiB ETA:3m31s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(45%) CN:1 DL:11MiB ETA:3m21s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(45%) CN:1 DL:11MiB ETA:3m17s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(46%) CN:1 DL:11MiB ETA:3m15s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(46%) CN:1 DL:11MiB ETA:3m13s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(46%) CN:1 DL:11MiB ETA:3m11s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(46%) CN:1 DL:11MiB ETA:3m15s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(47%) CN:1 DL:10MiB ETA:3m17s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(47%) CN:1 DL:10MiB ETA:3m18s]
+webui-docker-download-1  | [#216a7a 1.8GiB/3.9GiB(47%) CN:1 DL:10MiB ETA:3m16s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(47%) CN:1 DL:10MiB ETA:3m16s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(48%) CN:1 DL:10MiB ETA:3m16s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(48%) CN:1 DL:10MiB ETA:3m14s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(48%) CN:1 DL:10MiB ETA:3m13s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(48%) CN:1 DL:10MiB ETA:3m13s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(49%) CN:1 DL:10MiB ETA:3m11s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(49%) CN:1 DL:11MiB ETA:3m5s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(49%) CN:1 DL:10MiB ETA:3m8s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(49%) CN:1 DL:10MiB ETA:3m9s]
+webui-docker-download-1  | [#216a7a 1.9GiB/3.9GiB(50%) CN:1 DL:10MiB ETA:3m5s]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(50%) CN:1 DL:10MiB ETA:3m4s]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(50%) CN:1 DL:11MiB ETA:3m1s]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(51%) CN:1 DL:10MiB ETA:3m5s]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(51%) CN:1 DL:10MiB ETA:3m6s]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(51%) CN:1 DL:10MiB ETA:3m]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(51%) CN:1 DL:10MiB ETA:2m59s]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(52%) CN:1 DL:10MiB ETA:2m58s]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(52%) CN:1 DL:11MiB ETA:2m51s]
+webui-docker-download-1  | [#216a7a 2.0GiB/3.9GiB(52%) CN:1 DL:10MiB ETA:2m58s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(52%) CN:1 DL:10MiB ETA:2m56s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(53%) CN:1 DL:10MiB ETA:2m56s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(53%) CN:1 DL:10MiB ETA:2m55s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(53%) CN:1 DL:10MiB ETA:2m56s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(54%) CN:1 DL:10MiB ETA:2m53s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(54%) CN:1 DL:10MiB ETA:2m51s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(54%) CN:1 DL:10MiB ETA:2m50s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(54%) CN:1 DL:10MiB ETA:2m51s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(54%) CN:1 DL:9.5MiB ETA:3m13s]
+webui-docker-download-1  | [#216a7a 2.1GiB/3.9GiB(55%) CN:1 DL:9.7MiB ETA:3m6s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(55%) CN:1 DL:9.7MiB ETA:3m6s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(55%) CN:1 DL:9.7MiB ETA:3m5s]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:13:32 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(56%) CN:1 DL:9.5MiB ETA:3m6s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(56%) CN:1 DL:9.5MiB ETA:3m6s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(56%) CN:1 DL:9.6MiB ETA:3m3s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(56%) CN:1 DL:9.6MiB ETA:3m2s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(56%) CN:1 DL:9.8MiB ETA:2m58s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(57%) CN:1 DL:10MiB ETA:2m41s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(57%) CN:1 DL:10MiB ETA:2m39s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(57%) CN:1 DL:10MiB ETA:2m39s]
+webui-docker-download-1  | [#216a7a 2.2GiB/3.9GiB(57%) CN:1 DL:10MiB ETA:2m44s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(58%) CN:1 DL:10MiB ETA:2m44s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(58%) CN:1 DL:10MiB ETA:2m40s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(58%) CN:1 DL:10MiB ETA:2m38s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(58%) CN:1 DL:10MiB ETA:2m41s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(59%) CN:1 DL:10MiB ETA:2m38s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(59%) CN:1 DL:10MiB ETA:2m37s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(59%) CN:1 DL:10MiB ETA:2m29s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(59%) CN:1 DL:10MiB ETA:2m30s]
+webui-docker-download-1  | [#216a7a 2.3GiB/3.9GiB(60%) CN:1 DL:10MiB ETA:2m27s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(60%) CN:1 DL:11MiB ETA:2m24s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(60%) CN:1 DL:11MiB ETA:2m23s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(61%) CN:1 DL:11MiB ETA:2m21s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(61%) CN:1 DL:11MiB ETA:2m20s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(61%) CN:1 DL:11MiB ETA:2m19s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(61%) CN:1 DL:11MiB ETA:2m19s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(62%) CN:1 DL:11MiB ETA:2m17s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(62%) CN:1 DL:11MiB ETA:2m15s]
+webui-docker-download-1  | [#216a7a 2.4GiB/3.9GiB(62%) CN:1 DL:11MiB ETA:2m13s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(62%) CN:1 DL:11MiB ETA:2m16s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(63%) CN:1 DL:10MiB ETA:2m16s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(63%) CN:1 DL:10MiB ETA:2m15s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(63%) CN:1 DL:10MiB ETA:2m13s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(64%) CN:1 DL:10MiB ETA:2m13s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(64%) CN:1 DL:10MiB ETA:2m13s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(64%) CN:1 DL:10MiB ETA:2m12s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(64%) CN:1 DL:11MiB ETA:2m8s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(65%) CN:1 DL:10MiB ETA:2m10s]
+webui-docker-download-1  | [#216a7a 2.5GiB/3.9GiB(65%) CN:1 DL:10MiB ETA:2m9s]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(65%) CN:1 DL:11MiB ETA:2m4s]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(65%) CN:1 DL:10MiB ETA:2m7s]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(66%) CN:1 DL:10MiB ETA:2m7s]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(66%) CN:1 DL:10MiB ETA:2m6s]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(66%) CN:1 DL:10MiB ETA:2m6s]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(66%) CN:1 DL:10MiB ETA:2m4s]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(67%) CN:1 DL:10MiB ETA:2m2s]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(67%) CN:1 DL:10MiB ETA:2m]
+webui-docker-download-1  | [#216a7a 2.6GiB/3.9GiB(67%) CN:1 DL:10MiB ETA:1m59s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(68%) CN:1 DL:10MiB ETA:1m58s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(68%) CN:1 DL:11MiB ETA:1m54s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(68%) CN:1 DL:11MiB ETA:1m53s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(68%) CN:1 DL:10MiB ETA:1m56s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(69%) CN:1 DL:10MiB ETA:1m55s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(69%) CN:1 DL:10MiB ETA:1m54s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(69%) CN:1 DL:10MiB ETA:1m53s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(69%) CN:1 DL:10MiB ETA:1m52s]
+webui-docker-download-1  | [#216a7a 2.7GiB/3.9GiB(70%) CN:1 DL:10MiB ETA:1m51s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(70%) CN:1 DL:10MiB ETA:1m49s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(70%) CN:1 DL:9.3MiB ETA:2m7s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(71%) CN:1 DL:10MiB ETA:1m57s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(71%) CN:1 DL:10MiB ETA:1m54s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(71%) CN:1 DL:10MiB ETA:1m54s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(71%) CN:1 DL:9.6MiB ETA:1m58s]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:14:33 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(72%) CN:1 DL:9.5MiB ETA:1m58s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(72%) CN:1 DL:9.5MiB ETA:1m58s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(72%) CN:1 DL:9.6MiB ETA:1m56s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(72%) CN:1 DL:9.6MiB ETA:1m55s]
+webui-docker-download-1  | [#216a7a 2.8GiB/3.9GiB(72%) CN:1 DL:9.6MiB ETA:1m54s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(73%) CN:1 DL:11MiB ETA:1m37s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(73%) CN:1 DL:11MiB ETA:1m36s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(73%) CN:1 DL:10MiB ETA:1m38s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(74%) CN:1 DL:10MiB ETA:1m37s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(74%) CN:1 DL:10MiB ETA:1m35s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(74%) CN:1 DL:11MiB ETA:1m31s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(74%) CN:1 DL:11MiB ETA:1m30s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(75%) CN:1 DL:11MiB ETA:1m30s]
+webui-docker-download-1  | [#216a7a 2.9GiB/3.9GiB(75%) CN:1 DL:10MiB ETA:1m33s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(75%) CN:1 DL:10MiB ETA:1m32s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(75%) CN:1 DL:10MiB ETA:1m31s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(76%) CN:1 DL:10MiB ETA:1m30s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(76%) CN:1 DL:10MiB ETA:1m28s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(76%) CN:1 DL:10MiB ETA:1m29s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(76%) CN:1 DL:10MiB ETA:1m28s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(77%) CN:1 DL:10MiB ETA:1m27s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(77%) CN:1 DL:10MiB ETA:1m26s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(77%) CN:1 DL:10MiB ETA:1m24s]
+webui-docker-download-1  | [#216a7a 3.0GiB/3.9GiB(77%) CN:1 DL:10MiB ETA:1m22s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(78%) CN:1 DL:10MiB ETA:1m20s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(78%) CN:1 DL:10MiB ETA:1m23s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(78%) CN:1 DL:10MiB ETA:1m22s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(78%) CN:1 DL:10MiB ETA:1m21s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(79%) CN:1 DL:10MiB ETA:1m19s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(79%) CN:1 DL:10MiB ETA:1m19s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(79%) CN:1 DL:10MiB ETA:1m18s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(80%) CN:1 DL:10MiB ETA:1m17s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(80%) CN:1 DL:10MiB ETA:1m16s]
+webui-docker-download-1  | [#216a7a 3.1GiB/3.9GiB(80%) CN:1 DL:10MiB ETA:1m16s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(80%) CN:1 DL:10MiB ETA:1m14s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(81%) CN:1 DL:10MiB ETA:1m12s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(81%) CN:1 DL:10MiB ETA:1m11s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(81%) CN:1 DL:10MiB ETA:1m11s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(81%) CN:1 DL:10MiB ETA:1m11s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(82%) CN:1 DL:10MiB ETA:1m9s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(82%) CN:1 DL:10MiB ETA:1m8s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(82%) CN:1 DL:10MiB ETA:1m7s]
+webui-docker-download-1  | [#216a7a 3.2GiB/3.9GiB(82%) CN:1 DL:10MiB ETA:1m6s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(83%) CN:1 DL:10MiB ETA:1m4s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(83%) CN:1 DL:10MiB ETA:1m4s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(83%) CN:1 DL:10MiB ETA:1m]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(83%) CN:1 DL:10MiB ETA:59s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(84%) CN:1 DL:10MiB ETA:58s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(84%) CN:1 DL:10MiB ETA:58s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(84%) CN:1 DL:10MiB ETA:58s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(84%) CN:1 DL:10MiB ETA:57s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(85%) CN:1 DL:10MiB ETA:56s]
+webui-docker-download-1  | [#216a7a 3.3GiB/3.9GiB(85%) CN:1 DL:10MiB ETA:55s]
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(85%) CN:1 DL:10MiB ETA:54s]
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(86%) CN:1 DL:10MiB ETA:52s]
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(86%) CN:1 DL:9.4MiB ETA:58s]
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(86%) CN:1 DL:9.9MiB ETA:54s]
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(86%) CN:1 DL:10MiB ETA:52s]
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(87%) CN:1 DL:9.9MiB ETA:52s]
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(87%) CN:1 DL:9.8MiB ETA:52s]
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(87%) CN:1 DL:9.7MiB ETA:51s]
+webui-docker-download-1  |  *** Download Progress Summary as of Fri May 26 09:15:33 2023 ***
+webui-docker-download-1  | ===============================================================================
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(87%) CN:1 DL:9.7MiB ETA:50s]
+webui-docker-download-1  | FILE: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  | -------------------------------------------------------------------------------
+webui-docker-download-1  |
+webui-docker-download-1  | [#216a7a 3.4GiB/3.9GiB(87%) CN:1 DL:9.7MiB ETA:50s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(88%) CN:1 DL:9.7MiB ETA:49s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(88%) CN:1 DL:9.7MiB ETA:48s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(88%) CN:1 DL:11MiB ETA:41s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(88%) CN:1 DL:11MiB ETA:40s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(89%) CN:1 DL:10MiB ETA:41s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(89%) CN:1 DL:10MiB ETA:39s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(89%) CN:1 DL:11MiB ETA:37s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(90%) CN:1 DL:10MiB ETA:37s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(90%) CN:1 DL:10MiB ETA:36s]
+webui-docker-download-1  | [#216a7a 3.5GiB/3.9GiB(90%) CN:1 DL:10MiB ETA:35s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(90%) CN:1 DL:10MiB ETA:34s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(91%) CN:1 DL:10MiB ETA:33s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(91%) CN:1 DL:10MiB ETA:32s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(91%) CN:1 DL:10MiB ETA:31s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(91%) CN:1 DL:10MiB ETA:30s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(92%) CN:1 DL:10MiB ETA:29s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(92%) CN:1 DL:10MiB ETA:28s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(92%) CN:1 DL:11MiB ETA:26s]
+webui-docker-download-1  | [#216a7a 3.6GiB/3.9GiB(92%) CN:1 DL:10MiB ETA:25s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(93%) CN:1 DL:10MiB ETA:25s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(93%) CN:1 DL:11MiB ETA:23s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(93%) CN:1 DL:10MiB ETA:23s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(93%) CN:1 DL:10MiB ETA:22s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(94%) CN:1 DL:10MiB ETA:21s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(94%) CN:1 DL:10MiB ETA:20s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(94%) CN:1 DL:10MiB ETA:19s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(95%) CN:1 DL:10MiB ETA:18s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(95%) CN:1 DL:10MiB ETA:18s]
+webui-docker-download-1  | [#216a7a 3.7GiB/3.9GiB(95%) CN:1 DL:10MiB ETA:16s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(95%) CN:1 DL:10MiB ETA:15s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(96%) CN:1 DL:10MiB ETA:15s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(96%) CN:1 DL:10MiB ETA:13s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(96%) CN:1 DL:10MiB ETA:12s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(96%) CN:1 DL:10MiB ETA:11s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(97%) CN:1 DL:10MiB ETA:10s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(97%) CN:1 DL:10MiB ETA:9s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(97%) CN:1 DL:11MiB ETA:8s]
+webui-docker-download-1  | [#216a7a 3.8GiB/3.9GiB(98%) CN:1 DL:10MiB ETA:7s]
+webui-docker-download-1  | [#216a7a 3.9GiB/3.9GiB(98%) CN:1 DL:10MiB ETA:6s]
+webui-docker-download-1  | [#216a7a 3.9GiB/3.9GiB(98%) CN:1 DL:10MiB ETA:5s]
+webui-docker-download-1  | [#216a7a 3.9GiB/3.9GiB(98%) CN:1 DL:10MiB ETA:4s]
+webui-docker-download-1  | [#216a7a 3.9GiB/3.9GiB(99%) CN:1 DL:10MiB ETA:3s]
+webui-docker-download-1  | [#216a7a 3.9GiB/3.9GiB(99%) CN:1 DL:10MiB ETA:2s]
+webui-docker-download-1  | [#216a7a 3.9GiB/3.9GiB(99%) CN:1 DL:11MiB ETA:1s]
+webui-docker-download-1  | [#216a7a 3.9GiB/3.9GiB(99%) CN:1 DL:10MiB]
+webui-docker-download-1  |
+webui-docker-download-1  | 05/26 09:16:19 [NOTICE] Download complete: /data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  |
+webui-docker-download-1  | Download Results:
+webui-docker-download-1  | gid   |stat|avg speed  |path/URI
+webui-docker-download-1  | ======+====+===========+=======================================================
+webui-docker-download-1  | d4efab|OK  |       0B/s|/data/GFPGAN/GFPGANv1.4.pth
+webui-docker-download-1  | ea1c82|OK  |   7.5MiB/s|/data/RealESRGAN/RealESRGAN_x4plus_anime_6B.pth
+webui-docker-download-1  | b7b934|OK  |       0B/s|/data/LDSR/project.yaml
+webui-docker-download-1  | a35d0a|OK  |       0B/s|/data/LDSR/model.ckpt
+webui-docker-download-1  | 63f3e9|OK  |   2.1MiB/s|/data/RealESRGAN/RealESRGAN_x4plus.pth
+webui-docker-download-1  | 322a43|OK  |   3.5MiB/s|/data/VAE/vae-ft-mse-840000-ema-pruned.ckpt
+webui-docker-download-1  | f4c3f6|ERR |   7.0MiB/s|/data/StableDiffusion/sd-v1-5-inpainting.ckpt
+webui-docker-download-1  | 216a7a|OK  |   6.2MiB/s|/data/StableDiffusion/v1-5-pruned-emaonly.ckpt
+webui-docker-download-1  |
+webui-docker-download-1  | Status Legend:
+webui-docker-download-1  | (OK):download completed.(ERR):error occurred.
+webui-docker-download-1  |
+webui-docker-download-1  | aria2 will resume download if the transfer is restarted.
+webui-docker-download-1  | If there are any errors, then see the log file. See '-l' option in help/man page for details.
+webui-docker-download-1 exited with code 1
