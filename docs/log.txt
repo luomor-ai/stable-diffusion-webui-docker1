@@ -1958,3 +1958,90 @@ webui-docker-auto-cpu-1  | Loading weights [c6bbc15e32] from /stable-diffusion-w
 webui-docker-auto-cpu-1  | Creating model from config: /stable-diffusion-webui/configs/v1-inpainting-inference.yaml
 webui-docker-auto-cpu-1  | LatentInpaintDiffusion: Running in eps-prediction mode
 webui-docker-auto-cpu-1  | DiffusionWrapper has 859.54 M params.
+
+
+rew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry or file an issue; just ignore this. Thanks!
+
+Warning: The following directories are not writable by your user:
+/usr/local/bin
+
+You should change the ownership of these directories to your user.
+  sudo chown -R $(whoami) /usr/local/bin
+
+And make sure that your user has write permission.
+  chmod u+w /usr/local/bin
+
+Warning: Suspicious https://github.com/Homebrew/brew git origin remote found.
+The current git origin is:
+  https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+
+With a non-standard origin, Homebrew won't update properly.
+You can solve this by setting the origin remote:
+  git -C "/usr/local/Homebrew" remote set-url origin https://github.com/Homebrew/brew
+
+Warning: Suspicious https://github.com/Homebrew/homebrew-core git origin remote found.
+The current git origin is:
+  https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+
+With a non-standard origin, Homebrew won't update properly.
+You can solve this by setting the origin remote:
+  git -C "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core" remote set-url origin https://github.com/Homebrew/homebrew-core
+
+Warning: Some installed kegs have no formulae!
+This means they were either deleted or installed manually.
+You should find replacements for the following formulae:
+  mongodb
+  unrar
+
+Warning: Some installed formulae are deprecated or disabled.
+You should find replacements for the following formulae:
+  ilmbase
+  mcrypt
+  mysql@5.6
+
+Warning: Unbrewed dylibs were found in /usr/local/lib.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected dylibs:
+  /usr/local/lib/liblz4.1.7.5.dylib
+
+Warning: You have unlinked kegs in your Cellar.
+Leaving kegs unlinked can lead to build-trouble and cause formulae that depend on
+those kegs to fail to run properly once built. Run `brew link` on these:
+  json-c
+  libxmp
+  swig
+  popt
+  boost
+  geoip
+  rabbitmq
+  xmp
+  mongodb
+  git-flow
+  rabbitmq-c
+  imagemagick
+  dnsmasq
+
+Warning: Xcode alone is not sufficient on Monterey.
+Install the Command Line Tools:
+  xcode-select --install
+
+
+Warning: Your Xcode (13.2.1) is outdated.
+Please update to Xcode 13.4 (or delete it).
+Xcode can be updated from the App Store.
+
+
+Warning: Broken symlinks were found. Remove them with `brew cleanup`:
+  /usr/local/bin/apm
+  /usr/local/bin/atom
+
+Warning: Some installed formulae are missing dependencies.
+You should `brew install` the missing dependencies:
+  brew install ghostscript jasper jbig2dec libde265 libheif liblqr libomp libraw openjpeg python@3.11 shared-mime-info x265
+
+Run `brew missing` for more details.
