@@ -1953,3 +1953,8 @@ webui-docker-auto-cpu-1  |
 webui-docker-auto-cpu-1  | To create a public link, set `share=True` in `launch()`.
 webui-docker-auto-cpu-1  | Startup time: 17.7s (import torch: 4.4s, import gradio: 3.8s, import ldm: 1.5s, other imports: 4.9s, setup codeformer: 0.7s, load
 scripts: 1.0s, create ui: 1.1s, gradio launch: 0.1s, scripts app_started_callback: 0.2s).
+webui-docker-auto-cpu-1  | c6bbc15e3224e6973459ba78de4998b80b50112b0ae5b5c67113d56b4e366b19
+webui-docker-auto-cpu-1  | Loading weights [c6bbc15e32] from /stable-diffusion-webui/models/Stable-diffusion/sd-v1-5-inpainting.ckpt
+webui-docker-auto-cpu-1  | Creating model from config: /stable-diffusion-webui/configs/v1-inpainting-inference.yaml
+webui-docker-auto-cpu-1  | LatentInpaintDiffusion: Running in eps-prediction mode
+webui-docker-auto-cpu-1  | DiffusionWrapper has 859.54 M params.
